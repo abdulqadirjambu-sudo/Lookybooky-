@@ -47,7 +47,7 @@ All four clips are iPhone HEVC 3840 × 2160 with −90° rotation metadata (disp
 ## Typography and colour
 - **On-screen lines:** Poppins Bold 700, 76 px, white #FFFFFF, centred, line height 1.18. Soft Ocean #0E2F39 shadow: 4 px down, 10 px blur, 45% opacity. No boxes.
 - **Label:** Inter Semibold 600, 40 px, white, centred, top at y = 1290 (lower third). Soft Ocean shadow: 2 px down, 6 px blur, 60% opacity.
-- **Accent:** one 10 px Turquoise #18BFCB dot beside the label (the only use of turquoise).
+- **No turquoise accent:** the optional dot beside the label was removed on request, so turquoise isn't used anywhere in this Reel.
 - Coral and Soft Sand are not used. Typographic apostrophe in "We’re".
 - **Fonts** come from the official google/fonts GitHub repo: `ofl/poppins/Poppins-Bold.ttf`, and `ofl/inter/Inter[opsz,wght].ttf` fixed at wght 600.
 - **Logo:** white horizontal logo, 220 × 58 px, centred at x 430–650, y 1349–1407. It's 30 px below the label, which is more than the height of the "o" (about 16 px). It appears only during the SP12 shot, with no recolour, stretch, outline or shadow.
@@ -58,7 +58,7 @@ All four clips are iPhone HEVC 3840 × 2160 with −90° rotation metadata (disp
 | We’re just / having a look. | 266, 539 → 813, 710 |
 | Famous last words. | 161, 516 → 918, 573 |
 | Just looking. / Apparently. | 291, 453 → 788, 623 |
-| Label | 307, 1290 → 772, 1319 |
+| Label | 320, 1290 → 759, 1319 |
 | Logo | 430, 1349 → 650, 1407 |
 
 Everything is outside the Instagram safe-zone margins (top 250, bottom 450, right 140). The build script checks this automatically.
@@ -72,7 +72,7 @@ Everything is outside the Instagram safe-zone margins (top 250, bottom 450, righ
 ## Cover
 - Frame: SP11 at 1.0 s (stroopwafel close-up).
 - Title: "The sweet detour", Poppins Bold 700, 104 px, white, centred at y = 470.
-- Label: "Sweet Pearl · Zandvoort", Inter 600, 44 px, with the turquoise dot, at y = 560.
+- Label: "Sweet Pearl · Zandvoort", Inter 600, 44 px, centred at y = 560.
 - The title, label and stroopwafel all sit inside the central 1080 × 1350 (4:5) area, y 285–1635.
 
 ## Deviations from the brief

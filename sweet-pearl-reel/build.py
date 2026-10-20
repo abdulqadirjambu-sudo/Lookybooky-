@@ -26,7 +26,6 @@ INTER_600 = WORK / "fonts" / "Inter-SemiBold-600.ttf"        # Inter variable, i
 LOGO = WORK / "brand" / "lookybooky-logo-white_from-guidelines-pdf.png"
 
 WHITE = (255, 255, 255)
-TURQUOISE = (0x18, 0xBF, 0xCB)
 OCEAN = (0x0E, 0x2F, 0x39)
 
 # Instagram safe zones
@@ -100,12 +99,9 @@ def draw_label(img=None, top=LABEL_TOP, with_logo=True, size=LABEL_SIZE):
     d = ImageDraw.Draw(mask)
     tb = d.textbbox((0, 0), LABEL_TEXT, font=font, anchor="lt")
     tw, th = tb[2] - tb[0], tb[3] - tb[1]
-    dot = max(10, size // 4)
-    gap = int(size * 0.4)
-    block_w = dot + gap + tw
-    x0 = (W - block_w) // 2
-    d.text((x0 + dot + gap, top), LABEL_TEXT, font=font, fill=255, anchor="lt")
-    boxes = [(x0, top, x0 + block_w, top + th)]
+    x0 = (W - tw) // 2
+    d.text((x0, top), LABEL_TEXT, font=font, fill=255, anchor="lt")
+    boxes = [(x0, top, x0 + tw, top + th)]
     shadow_src = mask.copy()
     logo_box = None
     if with_logo:
@@ -119,10 +115,6 @@ def draw_label(img=None, top=LABEL_TOP, with_logo=True, size=LABEL_SIZE):
     txt = Image.new("RGBA", (W, H), WHITE + (0,))
     txt.putalpha(mask)
     img.alpha_composite(txt)
-    # turquoise accent dot, vertically centred on the label's x-height band
-    dd = ImageDraw.Draw(img)
-    cy = top + th // 2 + 1
-    dd.ellipse((x0, cy - dot // 2, x0 + dot, cy + dot // 2), fill=TURQUOISE + (255,))
     if with_logo:
         img.alpha_composite(logo, logo_box[:2])  # logo untouched: no shadow, outline or recolour
     return img, boxes
