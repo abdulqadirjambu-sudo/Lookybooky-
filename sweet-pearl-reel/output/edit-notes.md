@@ -26,14 +26,14 @@ Only one version (main or alt opening) is published.
 | 0.0–2.0 s | LB2026_SP02.MOV | 0.000 → 2.000 s | "We’re just / having a look." |
 | 2.0–4.0 s | LB2026_SP11.MOV | 0.000 → 2.000 s | "Famous last words." |
 | 4.0–7.0 s | LB2026_SP08.MOV | 0.000 → 3.000 s | none |
-| 7.0–10.0 s | LB2026_SP12.MOV | 0.000 → 3.000 s | "Sweet Pearl · Zandvoort" + white logo |
+| 7.0–10.0 s | LB2026_SP12.MOV | 0.000 → 3.000 s | "Sweet Pearl · Zandvoort" |
 
 ### Alternate opening (8.0 s)
 | Reel time | Source | Source in → out | On-screen text |
 |---|---|---|---|
 | 0.0–2.0 s | LB2026_SP11.MOV | 0.000 → 2.000 s | "Just looking. / Apparently." |
 | 2.0–5.0 s | LB2026_SP08.MOV | 0.000 → 3.000 s | none |
-| 5.0–8.0 s | LB2026_SP12.MOV | 0.000 → 3.000 s | "Sweet Pearl · Zandvoort" + white logo |
+| 5.0–8.0 s | LB2026_SP12.MOV | 0.000 → 3.000 s | "Sweet Pearl · Zandvoort" |
 
 No trim nudges were needed: sharpness measured at the first, middle and last frames of every trim stays steady, with no blurry frames.
 
@@ -50,7 +50,7 @@ All four clips are iPhone HEVC 3840 × 2160 with −90° rotation metadata (disp
 - **No turquoise accent:** the optional dot beside the label was removed on request, so turquoise isn't used anywhere in this Reel.
 - Coral and Soft Sand are not used. Typographic apostrophe in "We’re".
 - **Fonts** come from the official google/fonts GitHub repo: `ofl/poppins/Poppins-Bold.ttf`, and `ofl/inter/Inter[opsz,wght].ttf` fixed at wght 600.
-- **Logo:** white horizontal logo, 220 × 58 px, centred at x 430–650, y 1349–1407. It's 30 px below the label, which is more than the height of the "o" (about 16 px). It appears only during the SP12 shot, with no recolour, stretch, outline or shadow.
+- **No logo:** the white LookyBooky logo under the label was removed on request, so the logo doesn't appear anywhere in the Reel or on the cover.
 
 ### Text position (px, 1080 × 1920 frame)
 | Overlay | Bounding box (x0, y0 → x1, y1) |
@@ -59,9 +59,8 @@ All four clips are iPhone HEVC 3840 × 2160 with −90° rotation metadata (disp
 | Famous last words. | 161, 516 → 918, 573 |
 | Just looking. / Apparently. | 291, 453 → 788, 623 |
 | Label | 320, 1290 → 759, 1319 |
-| Logo | 430, 1349 → 650, 1407 |
 
-Everything is outside the Instagram safe-zone margins (top 250, bottom 450, right 140). The build script checks this automatically.
+All text is outside the Instagram safe-zone margins (top 250, bottom 450, right 140). The build script checks this automatically.
 
 ## Audio
 - **Natural sound:** a 50 ms fade-in and fade-out on every shot, so each cut dips to near-silence (measured: no clicks). The cut audio is then raised by one fixed gain to about −16 LUFS (+18.0 dB main, +19.4 dB alt), with a limiter at −1.5 dBFS sample peak.
@@ -76,7 +75,7 @@ Everything is outside the Instagram safe-zone margins (top 250, bottom 450, righ
 - The title, label and stroopwafel all sit inside the central 1080 × 1350 (4:5) area, y 285–1635.
 
 ## Deviations from the brief
-1. **Logo file.** `assets/lookybooky-logo-white.png` was not supplied. The white logo was taken directly from the brand guidelines PDF (v3.25, Aug 2026, the same artwork as page 6, "Wit logo op donker en fotografie"), unedited. Saved as `work/brand/lookybooky-logo-white_from-guidelines-pdf.png`.
+1. **No logo or turquoise accent.** The brief asked for the white logo under the label in the final shot, plus an optional turquoise dot beside the label. Both were removed on request. (The logo taken from the brand guidelines PDF is still kept in `work/brand/` for future use.)
 2. **Cover template.** `assets/handpicked-spots-cover-template.png` was not supplied, so the cover follows the brand guidelines rather than the Handpicked spots template. **Check it against the template before publishing.** If it needs changes, add the template to `assets/` and re-run `python3 build.py render`.
 3. **Text heights.**
    - The SP02 line is at y 539–710 and partly overlaps the SWEET PEARL awning lettering. A lower position would cover the person's head.

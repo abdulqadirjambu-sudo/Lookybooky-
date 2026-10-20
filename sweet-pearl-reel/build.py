@@ -46,12 +46,12 @@ MAIN = [
     ("SP02", 0.0, 2.0, "line_main_1"),
     ("SP11", 0.0, 2.0, "line_main_2"),
     ("SP08", 0.0, 3.0, None),
-    ("SP12", 0.0, 3.0, "label_logo"),
+    ("SP12", 0.0, 3.0, "label"),
 ]
 ALT = [
     ("SP11", 0.0, 2.0, "line_alt_1"),
     ("SP08", 0.0, 3.0, None),
-    ("SP12", 0.0, 3.0, "label_logo"),
+    ("SP12", 0.0, 3.0, "label"),
 ]
 
 # name: (lines, vertical centre of the block). Centres are set per shot to keep text
@@ -136,10 +136,10 @@ def build_overlays():
         check_safe(name, boxes)
         img.save(OVL / f"{name}.png")
         meta[name] = boxes
-    img, boxes = draw_label()
-    check_safe("label_logo", boxes)
-    img.save(OVL / "label_logo.png")
-    meta["label_logo"] = boxes
+    img, boxes = draw_label(with_logo=False)
+    check_safe("label", boxes)
+    img.save(OVL / "label.png")
+    meta["label"] = boxes
     (OVL / "boxes.json").write_text(json.dumps(meta, indent=1))
 
 
@@ -288,7 +288,7 @@ if __name__ == "__main__":
         ("1  SP02 @0.0-2.0s  (main 0-2s)", "SP02", 1.0, "line_main_1"),
         ("2  SP11 @0.0-2.0s  (main 2-4s)", "SP11", 1.0, "line_main_2"),
         ("3  SP08 @0.0-3.0s  (main 4-7s)", "SP08", 1.5, None),
-        ("4  SP12 @0.0-3.0s  (main 7-10s)", "SP12", 1.5, "label_logo"),
+        ("4  SP12 @0.0-3.0s  (main 7-10s)", "SP12", 1.5, "label"),
         ("ALT  SP11 opening (alt 0-2s)", "SP11", 1.0, "line_alt_1"),
     ]
     if step == "overlays":
