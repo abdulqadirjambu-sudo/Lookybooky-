@@ -199,6 +199,31 @@ def contact_sheet(seq_specs, path):
     print("wrote", path)
 
 
+def audio_chain(seq):
+    """Inputs + per-shot audio chains (50 ms fade in/out at every cut) and their concat."""
+    inputs, fc = [], []
+    for i, (shot, ss, dur, _) in enumerate(seq):
+        inputs += ["-ss", ss, "-t", dur + 0.5, "-i", SRC / f"LB2026_{shot}.MOV"]
+        fc.append(f"[{i}:a:0]atrim=end={dur},asetpts=PTS-STARTPTS,aresample=48000,"
+                  f"aformat=channel_layouts=stereo,"
+                  f"afade=t=in:d=0.05,afade=t=out:st={dur - 0.05}:d=0.05[a{i}]")
+    fc.append("".join(f"[a{i}]" for i in range(len(seq))) + f"concat=n={len(seq)}:v=0:a=1")
+    return inputs, fc
+
+
+def loudness_gain(seq, target=-16.0):
+    """Measure integrated loudness of the cut audio; return the static gain (dB) to reach target.
+    A single static gain keeps the natural dynamics (loudnorm's dynamic mode pumps on 2-3 s shots)."""
+    inputs, fc = audio_chain(seq)
+    fc[-1] += ",ebur128=framelog=quiet"
+    r = subprocess.run(["ffmpeg", "-nostats", "-hide_banner", *map(str, inputs),
+                        "-filter_complex", ";".join(fc), "-f", "null", "-"],
+                       capture_output=True, text=True, check=True)
+    lufs = float(r.stderr.split("Integrated loudness:")[1].split("I:")[1].split("LUFS")[0])
+    print(f"  measured {lufs:.1f} LUFS -> gain {target - lufs:+.1f} dB")
+    return target - lufs
+
+
 def render(seq, out, audio):
     """audio: 'natural' (clip sound, -16 LUFS, 50 ms fades at each cut) or 'silent'."""
     total = sum(d for _, _, d, _ in seq)
@@ -217,7 +242,7 @@ def render(seq, out, audio):
         fc.append(f"[{idx}:v]format=rgba,scale=out_color_matrix=bt709:out_range=tv,format=yuva420p,"
                   f"split={n}" + "".join(f"[{ovl}{k}]" for k in range(n)))
     used = {k: 0 for k in ovl_inputs}
-    vlabels, alabels = [], []
+    vlabels = []
     for i, (shot, ss, dur, ovl) in enumerate(seq):
         frames = round(dur * FPS)
         # autorotate (display matrix) is applied by ffmpeg before this chain
@@ -229,15 +254,12 @@ def render(seq, out, audio):
             vlabels.append(f"[vo{i}]")
         else:
             vlabels.append(f"[v{i}]")
-        if audio == "natural":
-            fc.append(f"[{i}:a:0]atrim=end={dur},asetpts=PTS-STARTPTS,aresample=48000,"
-                      f"aformat=channel_layouts=stereo,"
-                      f"afade=t=in:d=0.05,afade=t=out:st={dur - 0.05}:d=0.05[a{i}]")
-            alabels.append(f"[a{i}]")
     fc.append("".join(vlabels) + f"concat=n={len(seq)}:v=1:a=0[vout]")
     if audio == "natural":
-        fc.append("".join(alabels) + f"concat=n={len(seq)}:v=0:a=1,"
-                  "loudnorm=I=-16:TP=-1.5:LRA=11:linear=true,aresample=48000,"
+        _, afc = audio_chain(seq)  # same inputs 0..n-1 as the video
+        gain = loudness_gain(seq)
+        fc += afc[:-1]
+        fc.append(afc[-1] + f",volume={gain:.2f}dB,alimiter=limit=0.84:level=false:attack=1:release=50,"
                   f"atrim=end={total},apad=whole_dur={total}[aout]")
     else:
         fc.append(f"anullsrc=r=48000:cl=stereo,atrim=end={total}[aout]")
