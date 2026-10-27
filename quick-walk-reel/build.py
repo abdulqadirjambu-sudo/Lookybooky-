@@ -144,7 +144,7 @@ def build_overlays():
         check_safe(name, boxes)
         img.save(OVL / f"{name}.png")
         meta[name] = boxes
-    img, boxes = draw_label(with_logo=True)
+    img, boxes = draw_label(with_logo=False)  # logo removed from the end shot on request
     check_safe("label", boxes)
     img.save(OVL / "label.png")
     meta["label"] = boxes
@@ -282,7 +282,7 @@ def render(seq, out, audio):
         fc.append(f"anullsrc=r=48000:cl=stereo,atrim=end={total}[aout]")
     cmd += ["-filter_complex", ";".join(fc), "-map", "[vout]", "-map", "[aout]",
             "-c:v", "libx264", "-profile:v", "high", "-preset", "slow", "-pix_fmt", "yuv420p",
-            "-b:v", "14M", "-maxrate", "16M", "-bufsize", "28M", "-r", FPS, "-g", FPS,
+            "-b:v", "12M", "-maxrate", "15M", "-bufsize", "24M", "-r", FPS, "-g", FPS,
             "-colorspace", "bt709", "-color_primaries", "bt709", "-color_trc", "bt709", "-color_range", "tv",
             "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-ac", "2",
             "-t", total, "-movflags", "+faststart", "-map_metadata", "-1", out]
