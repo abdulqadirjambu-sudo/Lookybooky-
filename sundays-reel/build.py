@@ -124,13 +124,27 @@ def contact_sheet(times, path):
     print("wrote", path)
 
 
-def loudness_gain(target=-16.0):
+LIMITER = "alimiter=limit=0.84:level=false:attack=1:release=50"
+
+
+def measure_lufs(gain):
     r = subprocess.run(["ffmpeg", "-nostats", "-hide_banner", "-ss", str(SS), "-t", str(DUR), "-i", str(SRC),
-                        "-map", "0:a:0", "-af", f"{AFADE},ebur128=framelog=quiet", "-f", "null", "-"],
-                       capture_output=True, text=True, check=True)
-    lufs = float(r.stderr.split("Integrated loudness:")[1].split("I:")[1].split("LUFS")[0])
-    print(f"  measured {lufs:.1f} LUFS -> gain {target - lufs:+.1f} dB")
-    return target - lufs
+                        "-map", "0:a:0", "-af", f"{AFADE},volume={gain:.2f}dB,{LIMITER},ebur128=framelog=quiet",
+                        "-f", "null", "-"], capture_output=True, text=True, check=True)
+    return float(r.stderr.split("Integrated loudness:")[1].split("I:")[1].split("LUFS")[0])
+
+
+def loudness_gain(target=-16.0):
+    """One static gain (keeps natural dynamics). The limiter catches the table clinks and
+    lowers the result, so re-measure after the limiter and correct until within 0.2 LU."""
+    gain = 0.0
+    for _ in range(4):
+        lufs = measure_lufs(gain)
+        print(f"  gain {gain:+.1f} dB -> {lufs:.1f} LUFS")
+        if abs(lufs - target) < 0.2:
+            break
+        gain += target - lufs
+    return gain
 
 
 AFADE = (f"aresample=48000,aformat=channel_layouts=stereo,"
@@ -153,12 +167,12 @@ def render(out, audio):
     if audio == "natural":
         gain = loudness_gain()
         fc.append(f"[0:a:0]atrim=end={DUR},asetpts=PTS-STARTPTS,{AFADE},volume={gain:.2f}dB,"
-                  f"alimiter=limit=0.84:level=false:attack=1:release=50,apad=whole_dur={DUR}[aout]")
+                  f"{LIMITER},apad=whole_dur={DUR}[aout]")
     else:
         fc.append(f"anullsrc=r=48000:cl=stereo,atrim=end={DUR}[aout]")
     cmd += ["-filter_complex", ";".join(fc), "-map", "[vout]", "-map", "[aout]",
             "-c:v", "libx264", "-profile:v", "high", "-preset", "slow", "-pix_fmt", "yuv420p",
-            "-b:v", "12M", "-maxrate", "15M", "-bufsize", "24M", "-r", FPS, "-g", FPS,
+            "-b:v", "14M", "-maxrate", "16M", "-bufsize", "28M", "-r", FPS, "-g", FPS,
             "-colorspace", "bt709", "-color_primaries", "bt709", "-color_trc", "bt709", "-color_range", "tv",
             "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-ac", "2",
             "-t", DUR, "-movflags", "+faststart", "-map_metadata", "-1", out]
