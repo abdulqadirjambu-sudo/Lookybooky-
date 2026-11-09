@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # LookyBooky Reel #04 "Coastal hair" (De Haven van Zandvoort) — exact build commands.
-# Run from anywhere: bash build.sh   (needs ffmpeg with libfreetype + libx264, python3 for loudnorm parsing)
+# Run from anywhere: bash build.sh   (needs ffmpeg with libfreetype + libx264, python3 + Pillow for cover crop)
 # Sources (copies, never the originals) live in _work/src/.
 set -euo pipefail
 HERE="$(cd "$(dirname "$0")" && pwd)"
@@ -10,7 +10,7 @@ mkdir -p "$T" "$Q"
 
 POPPINS="$HERE/$W/fonts/Poppins-Bold.ttf"      # static Poppins Bold 700 (google/fonts ofl/poppins)
 INTER="$HERE/$W/fonts/Inter-SemiBold.otf"      # static Inter SemiBold 600
-LOGO="$HERE/$W/logo_white.png"                 # white LookyBooky logo, 2397x632 RGBA (from previous export)
+# No LookyBooky logo in this Reel (removed at client request, 2026-11-09).
 
 H02=$SRC/LB2026_H02.MOV; H08=$SRC/LB2026_H08.MOV; H20=$SRC/LB2026_H20.MOV
 
@@ -21,12 +21,11 @@ printf 'De Haven van Zandvoort'          > "$T/label.txt"
 
 # ---------- layout (px, 1080x1920 canvas) ----------
 # Safe zone x 90-960, y 250-1500. ffmpeg 6.1 drawtext (y_align=text) puts y at the top of the visible glyphs.
-# Measured rendered boxes: H1 x 93-860, y 520-754 | H2 x 92-950, y 520-589 | label x 93-614, y 1360-1392 | logo 430-650, y 1422-1480.
+# Measured rendered boxes: H1 x 93-860, y 520-754 | H2 x 92-950, y 520-589 | label x 93-614, y 1360-1392.
 H1_SIZE=104; H1_Y=520; H1_LS=-27          # 2 lines, ~120 px line pitch; widest line 773 px -> x 90-863
 H2_SIZE=84;  H2_Y=520                     # 96 px would be 988 px wide (x 90-1078) -> outside safe zone; 84 px = 864 px wide
 LB_SIZE=44;  LB_Y=1360                    # cap top 1360, baseline 1392; text 525 px wide -> x 90-615
 LINE_Y=1338                               # 48x4 turquoise rule, 18 px above label cap top
-LOGO_W=220; LOGO_X=430; LOGO_Y=1422       # 220x58, centred, bottom edge 1480; 30 px gap above to label baseline
 
 SHADOW="fontcolor=white:shadowcolor=0x0E2F39@0.35:shadowx=0:shadowy=3"
 
@@ -41,16 +40,14 @@ alpha () { local a=$1 b=$2 fi=$3 fo=$4
 # vseg <input-idx> <in> <out> <frames> <label> : trim source, 30 fps CFR, 2160x3840 -> 1080x1920 (exact 9:16, crop 0,0)
 vseg () { echo "[$1:v]trim=start=$2:end=$3,setpts=PTS-STARTPTS,fps=30,scale=1080:1920:flags=lanczos,setsar=1,format=yuv420p,trim=end_frame=$4,setpts=PTS-STARTPTS[$5]"; }
 
-# overlays <dur> (input 3 = looped logo PNG) <h1a> <h1b> <h2a> <h2b> <lba> <logoa> : text + rule + logo on [vc] -> [vout]
-overlays () { local D=$1 H1A=$2 H1B=$3 H2A=$4 H2B=$5 LBA=$6 LGA=$7
+# overlays <dur> <h1a> <h1b> <h2a> <h2b> <lba> : text + turquoise rule on [vc] -> [vout]
+overlays () { local D=$1 H1A=$2 H1B=$3 H2A=$4 H2B=$5 LBA=$6
 cat <<EOF
 [vc]drawtext=fontfile='$POPPINS':textfile='$T/h1.txt':fontsize=$H1_SIZE:line_spacing=$H1_LS:x=90:y=$H1_Y:$SHADOW:enable='between(t,$H1A,$H1B)':alpha='$(alpha $H1A $H1B 0.2 0.15)',
 drawtext=fontfile='$POPPINS':textfile='$T/h2.txt':fontsize=$H2_SIZE:x=90:y=$H2_Y:$SHADOW:enable='between(t,$H2A,$H2B)':alpha='$(alpha $H2A $H2B 0.2 0.15)',
 drawtext=fontfile='$INTER':textfile='$T/label.txt':fontsize=$LB_SIZE:x=90:y=$LB_Y:$SHADOW:enable='gte(t,$LBA)':alpha='$(alpha $LBA $D 0.25 0)'[vt];
 color=c=0x18BFCB:s=48x4:r=30:d=$D,format=rgba,fade=t=in:st=$LBA:d=0.25:alpha=1[rule];
-[vt][rule]overlay=x=90:y=$LINE_Y:enable='gte(t,$LBA)'[vr];
-[3:v]fps=30,trim=duration=$D,scale=$LOGO_W:-1:flags=lanczos,format=rgba,fade=t=in:st=$LGA:d=0.25:alpha=1[lg];
-[vr][lg]overlay=x=$LOGO_X:y=$LOGO_Y:enable='gte(t,$LGA)',format=yuv420p,trim=duration=$D[vout]
+[vt][rule]overlay=x=90:y=$LINE_Y:enable='gte(t,$LBA)',format=yuv420p,trim=duration=$D[vout]
 EOF
 }
 
@@ -65,7 +62,7 @@ VIDEO_MAIN="$(vseg 0 0.5 3.5 90 v0);
 $(vseg 1 0.5 3.5 90 v1);
 $(vseg 2 0.5 3.5 90 v2);
 [v0][v1][v2]concat=n=3:v=1:a=0[vc];
-$(overlays 9 0.15 2.85 3.15 5.85 6.20 8.00)"
+$(overlays 9 0.15 2.85 3.15 5.85 6.20)"
 
 # Natural audio: 0.05 s handles each side of a cut so 0.1 s crossfades are centred on 3.00 / 6.00.
 # H02: 2x high-pass 120 Hz (24 dB/oct) + fast compressor on gusts + -10 dB; H08/H20: high-pass 120 Hz.
@@ -87,13 +84,13 @@ NAT_GAIN=$(normalise "$AUDIO_PRE" -14 -i "$H02" -i "$H08" -i "$H20" 2>>"$Q/audio
 AUDIO_NAT="$AUDIO_PRE,$NAT_GAIN,atrim=0:9[aout]"
 
 # Main, natural sound
-ffmpeg -hide_banner -y -i "$H02" -i "$H08" -i "$H20" -loop 1 -framerate 30 -i "$LOGO" \
+ffmpeg -hide_banner -y -i "$H02" -i "$H08" -i "$H20" \
   -filter_complex "$VIDEO_MAIN;$AUDIO_NAT" -map "[vout]" -map "[aout]" \
   "${ENC_V[@]}" "${ENC_A[@]}" "${MUX[@]}" -t 9 LB_Reel04_CoastalHair_natural.mp4
 
 # Main, silent stereo track
-ffmpeg -hide_banner -y -i "$H02" -i "$H08" -i "$H20" -loop 1 -framerate 30 -i "$LOGO" -f lavfi -i "anullsrc=r=48000:cl=stereo" \
-  -filter_complex "$VIDEO_MAIN" -map "[vout]" -map 4:a \
+ffmpeg -hide_banner -y -i "$H02" -i "$H08" -i "$H20" -f lavfi -i "anullsrc=r=48000:cl=stereo" \
+  -filter_complex "$VIDEO_MAIN" -map "[vout]" -map 3:a \
   "${ENC_V[@]}" "${ENC_A[@]}" "${MUX[@]}" -t 9 LB_Reel04_CoastalHair_silent.mp4
 
 # ======================= ALT 2-2-3 (7.00 s), silent =======================
@@ -101,13 +98,13 @@ VIDEO_ALT="$(vseg 0 0.5 2.5 60 v0);
 $(vseg 1 0.5 2.5 60 v1);
 $(vseg 2 0.5 3.5 90 v2);
 [v0][v1][v2]concat=n=3:v=1:a=0[vc];
-$(overlays 7 0.15 1.85 2.15 3.85 4.20 6.00)"
-ffmpeg -hide_banner -y -i "$H02" -i "$H08" -i "$H20" -loop 1 -framerate 30 -i "$LOGO" -f lavfi -i "anullsrc=r=48000:cl=stereo" \
-  -filter_complex "$VIDEO_ALT" -map "[vout]" -map 4:a \
+$(overlays 7 0.15 1.85 2.15 3.85 4.20)"
+ffmpeg -hide_banner -y -i "$H02" -i "$H08" -i "$H20" -f lavfi -i "anullsrc=r=48000:cl=stereo" \
+  -filter_complex "$VIDEO_ALT" -map "[vout]" -map 3:a \
   "${ENC_V[@]}" "${ENC_A[@]}" "${MUX[@]}" -t 7 LB_Reel04_CoastalHair_ALT_2-2-3_silent.mp4
 
 # ======================= COVER =======================
-# Timeline 0.80 s = H02 source 1.30 s: hair fanned out by a gust, headline 1 at full opacity, no label/logo.
+# Timeline 0.80 s = H02 source 1.30 s: hair fanned out by a gust, headline 1 at full opacity, no label.
 COVER_T=0.80
 ffmpeg -hide_banner -y -ss $COVER_T -i LB_Reel04_CoastalHair_silent.mp4 -frames:v 1 -q:v 2 -update 1 "$Q/cover_raw.png"
 python3 -I -c 'import sys;from PIL import Image;im=Image.open(sys.argv[1]).convert("RGB");im.save(sys.argv[2],quality=92,subsampling=0);im.crop((0,285,1080,1635)).save(sys.argv[3],quality=92,subsampling=0)' \
