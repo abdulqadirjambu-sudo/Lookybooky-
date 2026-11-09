@@ -5,3 +5,9 @@ sweet-pearl-reel/work/fonts/
 sweet-pearl-reel/work/overlays/
 sweet-pearl-reel/work/*.png
 __pycache__/
+
+# Reel04/07 source copies, scratch
+2026-11-09_Reel*/_work/src/
+2026-11-09_Reel*/_work/qc/cs_*.png
+2026-11-09_Reel*/_work/qc/sz_*.png
+2026-11-09_Reel*/_work/qc/m.png
