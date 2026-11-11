@@ -49,8 +49,8 @@ CREDIT = "Photo: Kim Kramer"
 # Crops: the 4:5 window is the largest that fits the photo; focus_x / focus_y (0..1)
 # place it. zoom > 1 tightens. Tuned per photo once the originals are in work/src/.
 PHOTOS = {
-    "ZM18": dict(file="LB2026_KimKramer_ZM18.jpg", focus_x=0.5, focus_y=0.5, zoom=1.0, keystone=0.0),
-    "ZM01": dict(file="LB2026_KimKramer_ZM01.jpg", focus_x=0.5, focus_y=0.5, zoom=1.0, keystone=0.0),
+    "ZM18": dict(file="LB2026_KimKramer_ZM18.jpg", focus_x=0.5, focus_y=0.0, zoom=1.0, keystone=0.0),
+    "ZM01": dict(file="LB2026_KimKramer_ZM01.jpg", focus_x=0.5, focus_y=0.0, zoom=1.0, keystone=0.0),
 }
 # Headline treatment on photos: "auto" picks white unless the area behind it is too
 # light for 3:1 (large-text WCAG), then falls back to Ocean on a small Mist panel.
@@ -244,20 +244,7 @@ def slide3(with_credit, log):
         md.text((M, date_top), DATE, font=fd, fill=fill, anchor="lt")
     soft_shadow(im, info, offset=2, blur=6, alpha=0.5)
     info(ImageDraw.Draw(im), WHITE)
-    # Logo: 180 px wide, right margin 90, on the bottom row under the label block,
-    # because the label (734 px) runs past x = 810 where a right-aligned logo starts.
-    logo = Image.open(LOGO).convert("RGBA")
-    lw = 180
-    lh = round(logo.height * lw / logo.width)
-    logo = logo.resize((lw, lh), Image.LANCZOS)
-    lx, ly = W - M - lw, H - 40 - lh
-    im.paste(logo, (lx, ly), logo)
-    lbl = ImageDraw.Draw(im).textbbox((M, label_top), LABEL, font=fl, anchor="lt")
-    o_height = round(lh * 0.29)
-    gap_v = ly - lbl[3]
-    log.append(f"slide 3 logo at ({lx},{ly}) {lw}x{lh}; label bbox {lbl}; vertical clear space {gap_v}px "
-               f"(letter 'o' ~{o_height}px)")
-    assert gap_v >= o_height
+    # No logo on slide 3 (removed on request: it landed on the walking visitor).
     if with_credit:
         credit(im)
     return im, final
@@ -296,41 +283,31 @@ def grid_check(s1, path):
 
 def main():
     OUT.mkdir(exist_ok=True)
-    PROOF.mkdir(exist_ok=True)
+    for f in OUT.glob("*.png"):
+        f.unlink()
     log = []
-    s1c, ok1 = slide1(True, log)
-    s1n, _ = slide1(False, [])
+    s1, ok1 = slide1(False, log)     # photo credit removed on request
     s1a = slide1_alt()
     s2 = slide2()
-    s3c, ok3 = slide3(True, log)
-    s3n, _ = slide3(False, [])
-
-    dest1 = OUT if ok1 else PROOF
-    dest3 = OUT if ok3 else PROOF
-    tag1 = "" if ok1 else "_PROOF-photo-pending"
-    tag3 = "" if ok3 else "_PROOF-photo-pending"
-    save(s1c, dest1 / f"LB_Carousel05_slide1{tag1}.png")
-    save(s1n, dest1 / f"LB_Carousel05_slide1_no-credit{tag1}.png")
+    s3, ok3 = slide3(False, log)
+    if not (ok1 and ok3):
+        raise SystemExit("Missing source photo(s) in work/src/: " + ", ".join(
+            PHOTOS[k]["file"] for k, ok in (("ZM18", ok1), ("ZM01", ok3)) if not ok))
+    save(s1, OUT / "LB_Carousel05_slide1.png")
     save(s1a, OUT / "LB_Carousel05_slide1-alt_textcard.png")
     save(s2, OUT / "LB_Carousel05_slide2.png")
-    save(s3c, dest3 / f"LB_Carousel05_slide3{tag3}.png")
-    save(s3n, dest3 / f"LB_Carousel05_slide3_no-credit{tag3}.png")
-
-    final_all = ok1 and ok3
-    pv = OUT if final_all else PROOF
-    pt = "" if final_all else "_PROOF"
-    side_by_side([s1c, s2, s3c], pv / f"LB_Carousel05_side-by-side_photo-hook{pt}.png",
+    save(s3, OUT / "LB_Carousel05_slide3.png")
+    side_by_side([s1, s2, s3], OUT / "LB_Carousel05_side-by-side_photo-hook.png",
                  "Carousel 05, version A: photo hook (ZM18)")
-    side_by_side([s1a, s2, s3c], pv / f"LB_Carousel05_side-by-side_textcard-hook{pt}.png",
+    side_by_side([s1a, s2, s3], OUT / "LB_Carousel05_side-by-side_textcard-hook.png",
                  "Carousel 05, version B: text-card hook")
+    grid_check(s1, OUT / "LB_Carousel05_gridcheck_photo.png")
     grid_check(s1a, OUT / "LB_Carousel05_gridcheck_textcard.png")
-    grid_check(s1n, (OUT if ok1 else PROOF) / f"LB_Carousel05_gridcheck_photo{tag1}.png")
-
+    # Crops for the design canvas (photo only, no type).
+    for k in PHOTOS:
+        load_photo(k).save(WORK / f"crop_{k}.jpg", quality=90)
     for k, cfg in PHOTOS.items():
-        if "_crop" in cfg:
-            log.append(f"{k}: source {cfg['_size']}, crop box {cfg['_crop']}, keystone {cfg['keystone']}")
-        else:
-            log.append(f"{k}: MISSING {SRC / cfg['file']}")
+        log.append(f"{k}: source {cfg['_size']}, crop box {cfg['_crop']}, keystone {cfg['keystone']}")
     print("\n".join(log))
 
 
