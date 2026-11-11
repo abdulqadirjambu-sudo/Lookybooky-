@@ -9,8 +9,9 @@
 | `LB_Carousel05_slide1.png` | hook, photo ZM18 |
 | `LB_Carousel05_slide1-alt_textcard.png` | alternative hook: Mist text on Ocean, no photo |
 | `LB_Carousel05_slide2.png` | the fact, Ocean on Mist |
+| `LB_Carousel05_slide2-alt_artwork.png` | the fact with an archive watercolour of a Zandvoort fish seller above it |
 | `LB_Carousel05_slide3.png` | where to see it, photo ZM01 |
-| `LB_Carousel05_side-by-side_photo-hook.png` / `_textcard-hook.png` | the full set with each slide-1 version |
+| `LB_Carousel05_side-by-side_photo-hook.png` / `_textcard-hook.png` / `_photo-hook_artwork.png` | the full set with each slide-1 version, and with the artwork version of slide 2 |
 | `LB_Carousel05_gridcheck_photo.png` / `_textcard.png` | slide 1 in a 3-column profile grid, plus a tile at real phone size (about 124 px wide) |
 
 All files are 1080 × 1350 sRGB PNGs, except the previews.
@@ -30,10 +31,17 @@ Both sources are 4672 × 7008 (2:3). The 4:5 crop uses the full width at 4672 ×
 - The only processing is EXIF rotation, conversion from the embedded ICC profile to sRGB and a Lanczos resize. There are no filters, grading or retouching.
 
 ## Legibility compromises
-- **Headlines on both photos use the Mist panel.** White against the lightest 10% of the photo behind the headline measures 1.85:1 on ZM18 (white museum walls) and 1.57:1 on ZM01 (pale sky). Both are under the 3:1 minimum for large text, so the briefed fallback applies: Ocean #0E2F39 on a small Mist #F3F7F6 panel, padded 36 px, with no overlay or gradient. The panel's top-left edge sits at x 54 so the text itself stays on the 90 px line on every slide.
-- On ZM01 the bottom of the headline panel overlaps the tops of both flags slightly; the ZM marks on the flags stay readable.
-- **Slide 3 label:** white Inter with a very soft Ocean text shadow (2 px, 6 px blur, 50%), the same treatment as Reel 5. "…Museum" runs over the visitor's bag and skirt, and the shadow keeps it readable. It's a text effect, not a box.
-- **Grid check:** the three-line hook stays readable at phone size on both versions. The text card is the stronger thumbnail (higher contrast, fewer competing details).
+- **Headlines are white, as in the house template (requested).** White against the lightest 10% of the photo behind the headline measures only 1.85:1 on ZM18 (white museum walls) and 1.57:1 on ZM01 (pale sky). To keep it readable without a box, overlay or gradient, the headline has a soft, wide Ocean text shadow (2 px down, 14 px blur, 55%). If it still reads too faint, the fallback is `HEAD_MODE = "panel"` in `build.py`: Ocean on a small Mist panel.
+- **Slide 1:** in every 4:5 crop of ZM18, the history panel fills the upper third, so the white headline crosses the panel's title ("HET ZANDVOORTS MUSEUM"). It isn't aligned to or pointing at any image or line of text, but it does sit on the panel.
+- **Slide 3:** the headline overlaps the top of the left flag. "…Museum" in the label runs over the visitor's bag and skirt; its soft shadow keeps it readable.
+- **Grid check:** the photo hook is noticeably weaker as a thumbnail than the text card.
+
+## Slide 2 artwork (alternative)
+- Wybrand Hendriks (1744–1831), watercolour of a fish seller from Zandvoort with a basket, c. 1797–1802. Noord-Hollands Archief, Beeldcollectie Haarlem, inv. NL-HlmNHA 1100 KNA006003500. Licence: **CC0 1.0** (public domain dedication), via Wikimedia Commons: <https://commons.wikimedia.org/wiki/File:Visvrouw_Malle_Kee,_Inventarisnummer_NL-HlmNHA_1100_KNA006003500.JPG>. No credit is legally required. A courtesy line ("Wybrand Hendriks, c. 1800 · Noord-Hollands Archief") in the post caption is good practice.
+- The archive title names her by her nickname, so the slide doesn't name or caption her.
+- The crop is a 1080 × 760 band from head to basket, with the scan border trimmed. It uses the 960 px Commons version enlarged 1.125×, because the full-size original (1194 × 1918) was rate-limited from here. For the sharpest result, download the original from the Commons page and put it at `work/src/Hendriks_Visvrouw_NHA_KNA006003500.jpg`.
+- The original brief said slide 2 should have no artwork. This version was added on request, and the text-only slide 2 is kept.
+- Also checked: Rijksmuseum RP-F-2001-7-1107B-67, "Vissersvrouw in Zandvoort" (Maurice Bucquet, c. 1890, CC0). It's a page from an 1895 photography book where the fish seller is only a small vignette, so it isn't usable at slide size.
 
 ## Rebuild
 Put the originals in `work/src/` (gitignored) and the fonts in `work/fonts/` (Poppins Bold and SemiBold from google/fonts `ofl/poppins`; Inter Regular and SemiBold OTF), then run `python3 build.py`.
