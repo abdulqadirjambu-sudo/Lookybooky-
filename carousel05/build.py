@@ -54,7 +54,7 @@ PHOTOS = {
 }
 # Headline treatment on photos: "auto" picks white unless the area behind it is too
 # light for 3:1 (large-text WCAG), then falls back to Ocean on a small Mist panel.
-HEAD_MODE = {"ZM18": "auto", "ZM01": "auto"}
+HEAD_MODE = {"ZM18": "white", "ZM01": "white"}  # white as in the house template (requested)
 
 
 def font(path, size):
@@ -164,7 +164,9 @@ def photo_headline(im, lines, size, key, log):
         d.rectangle((box[0] - pad, box[1] - pad, box[2] + pad, box[3] + pad), fill=MIST)
         headline(d, lines, size, OCEAN)
     else:
-        headline(ImageDraw.Draw(im), lines, size, WHITE)  # template: clean white, no shadow
+        # Soft, wide Ocean text shadow (no box, no overlay) so white separates from light walls/sky.
+        soft_shadow(im, lambda md: headline(md, lines, size, 255), offset=2, blur=14, alpha=0.55)
+        headline(ImageDraw.Draw(im), lines, size, WHITE)
     return mode
 
 
@@ -250,6 +252,42 @@ def slide3(with_credit, log):
     return im, final
 
 
+ART = SRC / "Hendriks_Visvrouw_NHA_KNA006003500.jpg"
+# Wybrand Hendriks, fish seller from Zandvoort, watercolour c. 1797-1802.
+# Noord-Hollands Archief, inv. NL-HlmNHA 1100 KNA006003500. CC0 1.0 (via Wikimedia Commons).
+ART_BAND = 760          # height of the artwork band at the top of slide 2 (image variant)
+ART_TOP = 120           # source-scaled y where the band starts (keeps head to basket)
+
+
+def slide2_image():
+    """Slide 2 variant: the archive watercolour in a full-width band, the fact below on Mist."""
+    im = Image.new("RGB", (W, H), MIST)
+    art = srgb(Image.open(ART))
+    aw, ah = art.size
+    art = art.crop((round(aw * 0.035), round(ah * 0.02), round(aw * 0.965), ah))  # trim scan border/frame line
+    sc = W / art.width
+    art = art.resize((W, round(art.height * sc)), Image.LANCZOS)
+    im.paste(art.crop((0, ART_TOP, W, ART_TOP + ART_BAND)), (0, 0))
+    d = ImageDraw.Draw(im)
+    fm, fs = font(POPPINS_600, 58), font(INTER_400, 36)
+    main = wrap(FACT, fm, W - 2 * M)
+    sub = wrap(FACT_SUB, fs, W - 2 * M)
+    m_step, s_step = round(58 * 1.25), round(36 * 1.4)
+    asc_m, asc_s = fm.getbbox("Z")[1], fs.getbbox("T")[1]
+    y = ART_BAND + 64
+    d.rectangle((M, y, M + 47, y + 3), fill=TURQ)
+    y += 4 + 44
+    for i, l in enumerate(main):
+        d.text((M, y + i * m_step - asc_m), l, font=fm, fill=OCEAN, anchor="la")
+    y += (len(main) - 1) * m_step + 58 + 32
+    ocean80 = tuple(round(o * 0.8 + m * 0.2) for o, m in zip(OCEAN, MIST))
+    for i, l in enumerate(sub):
+        d.text((M, y + i * s_step - asc_s), l, font=fs, fill=ocean80, anchor="la")
+    bottom = y + (len(sub) - 1) * s_step + 36
+    assert bottom <= H - 60, bottom
+    return im
+
+
 def save(im, path):
     im.convert("RGB").save(path, "PNG", icc_profile=ImageCms.ImageCmsProfile(ImageCms.createProfile("sRGB")).tobytes())
 
@@ -296,11 +334,17 @@ def main():
     save(s1, OUT / "LB_Carousel05_slide1.png")
     save(s1a, OUT / "LB_Carousel05_slide1-alt_textcard.png")
     save(s2, OUT / "LB_Carousel05_slide2.png")
+    s2i = slide2_image() if ART.exists() else None
+    if s2i:
+        save(s2i, OUT / "LB_Carousel05_slide2-alt_artwork.png")
     save(s3, OUT / "LB_Carousel05_slide3.png")
     side_by_side([s1, s2, s3], OUT / "LB_Carousel05_side-by-side_photo-hook.png",
                  "Carousel 05, version A: photo hook (ZM18)")
     side_by_side([s1a, s2, s3], OUT / "LB_Carousel05_side-by-side_textcard-hook.png",
                  "Carousel 05, version B: text-card hook")
+    if s2i:
+        side_by_side([s1, s2i, s3], OUT / "LB_Carousel05_side-by-side_photo-hook_artwork.png",
+                     "Carousel 05, version C: photo hook + archive artwork on slide 2")
     grid_check(s1, OUT / "LB_Carousel05_gridcheck_photo.png")
     grid_check(s1a, OUT / "LB_Carousel05_gridcheck_textcard.png")
     # Crops for the design canvas (photo only, no type).
