@@ -1,6 +1,13 @@
 {
   "version": 2,
   "skills": {
+    "ab-testing": {
+      "source": "coreyhaines31/marketingskills",
+      "commit": "5b2b400eec1e7e1cec76245a715d0b0d4fd2a9c1",
+      "sourceType": "github",
+      "skillPath": "skills/ab-testing/SKILL.md",
+      "computedHash": "56e4fd344bf686d5d3a083b2728a9fd65f173f047a6535eeb05712dd7ee10f13"
+    },
     "ad-library-teardown": {
       "source": "ScrapeCreators/social-media-research-skills",
       "commit": "64ba7b4dea71e130d2712ffb6c1c1024b3b7c4b2",
@@ -14,6 +21,13 @@
       "sourceType": "github",
       "skillPath": "skills/audience-research/SKILL.md",
       "computedHash": "c528dbf8db3fde4adefb03b790f42d7409fe29caf47b924dd88c359334c07cc7"
+    },
+    "brand-voice-enforcement": {
+      "source": "anthropics/knowledge-work-plugins",
+      "commit": "2baf6d1eded3cd7aeff0b5c5918601a5799189b4",
+      "sourceType": "github",
+      "skillPath": "partner-built/brand-voice/skills/brand-voice-enforcement/SKILL.md",
+      "computedHash": "a9b64da9be393bc6b1800d274096a6726474b5c35ea93269b5ab3417bb8cc5dc"
     },
     "comment-mining": {
       "source": "ScrapeCreators/social-media-research-skills",
@@ -29,12 +43,47 @@
       "skillPath": "skills/competitor-social-research/SKILL.md",
       "computedHash": "23bcf408b2e8aaf38f173da6bbb599cfcbbd0963814252bd3e4a9ca84bbc1008"
     },
+    "content-audit": {
+      "source": "social-media-skills/skills",
+      "commit": "f28cef2b7067ec64e79c9d85421c022c06659e03",
+      "sourceType": "github",
+      "skillPath": "skills/content-audit/SKILL.md",
+      "computedHash": "fe3c981ee77a70f5ce6a20a26512e56e8693022c54ca9a409c3c42cda44e9184"
+    },
+    "content-calendar": {
+      "source": "social-media-skills/skills",
+      "commit": "f28cef2b7067ec64e79c9d85421c022c06659e03",
+      "sourceType": "github",
+      "skillPath": "skills/content-calendar/SKILL.md",
+      "computedHash": "992cb2fd3e87fe8a6ea4fb2cd714d14c60b6294c9f3685ad8611a416a625b414"
+    },
+    "content-pillars": {
+      "source": "social-media-skills/skills",
+      "commit": "f28cef2b7067ec64e79c9d85421c022c06659e03",
+      "sourceType": "github",
+      "skillPath": "skills/content-pillars/SKILL.md",
+      "computedHash": "d71163e301dbd7e17f1b6ea64a0e0d7bb288c4ced488b36ea74c674c01047d95"
+    },
     "content-repurposing": {
       "source": "ScrapeCreators/social-media-research-skills",
       "commit": "64ba7b4dea71e130d2712ffb6c1c1024b3b7c4b2",
       "sourceType": "github",
       "skillPath": "skills/content-repurposing/SKILL.md",
       "computedHash": "047e1246c65bbdf72d786a82a478616f66b862c2dbe20562366a1c38cd9edb40"
+    },
+    "content-strategy": {
+      "source": "coreyhaines31/marketingskills",
+      "commit": "5b2b400eec1e7e1cec76245a715d0b0d4fd2a9c1",
+      "sourceType": "github",
+      "skillPath": "skills/content-strategy/SKILL.md",
+      "computedHash": "94a23ddb279c20ea8c7c7751eb07f548c855a5287aed8983f31e63b49e7dbf1a"
+    },
+    "copywriting": {
+      "source": "coreyhaines31/marketingskills",
+      "commit": "5b2b400eec1e7e1cec76245a715d0b0d4fd2a9c1",
+      "sourceType": "github",
+      "skillPath": "skills/copywriting/SKILL.md",
+      "computedHash": "6b86be15d7e8397c27d339fbcbf72718854f96f096ca617889e45b5b8174c393"
     },
     "creator-profile-teardown": {
       "source": "ScrapeCreators/social-media-research-skills",
@@ -43,12 +92,40 @@
       "skillPath": "skills/creator-profile-teardown/SKILL.md",
       "computedHash": "8008480d4fdf40be8c63792fae39955ba47a76f0a0ec5d32f2c4e2a310103b12"
     },
+    "goals-and-kpis": {
+      "source": "social-media-skills/skills",
+      "commit": "f28cef2b7067ec64e79c9d85421c022c06659e03",
+      "sourceType": "github",
+      "skillPath": "skills/goals-and-kpis/SKILL.md",
+      "computedHash": "e727bf51280c7ca54f9b71a967c24d2539651c5c43a609b6fa23e12156d0648e"
+    },
+    "hook-writer": {
+      "source": "social-media-skills/skills",
+      "commit": "f28cef2b7067ec64e79c9d85421c022c06659e03",
+      "sourceType": "github",
+      "skillPath": "skills/hook-writer/SKILL.md",
+      "computedHash": "8bed89a2afd944a962b28c6bd2c3480c69c56936d90d5f2ed5e7c5427a1da058"
+    },
     "influencer-prospecting": {
       "source": "ScrapeCreators/social-media-research-skills",
       "commit": "64ba7b4dea71e130d2712ffb6c1c1024b3b7c4b2",
       "sourceType": "github",
       "skillPath": "skills/influencer-prospecting/SKILL.md",
       "computedHash": "048d676462a1f2db62e36b80451a81097fa390358449781ade1bc60ecb1c6a23"
+    },
+    "instagram-growth": {
+      "source": "social-media-skills/skills",
+      "commit": "f28cef2b7067ec64e79c9d85421c022c06659e03",
+      "sourceType": "github",
+      "skillPath": "skills/instagram-growth/SKILL.md",
+      "computedHash": "5a38bd26d67f0846544fb56d83ce3569ba1f25dbf15e9bee15c83ca3efcb4b4f"
+    },
+    "marketing-psychology": {
+      "source": "coreyhaines31/marketingskills",
+      "commit": "5b2b400eec1e7e1cec76245a715d0b0d4fd2a9c1",
+      "sourceType": "github",
+      "skillPath": "skills/marketing-psychology/SKILL.md",
+      "computedHash": "9542dca644cf683b8d171b962054679a51b2e740bfad0692c2edcfd85d129c9c"
     },
     "outlier-post-finder": {
       "source": "ScrapeCreators/social-media-research-skills",
@@ -70,6 +147,20 @@
       "sourceType": "github",
       "skillPath": "skills/scrapecreators-api/SKILL.md",
       "computedHash": "5bf942c823d97c3ac154d8c540378dd2a969259e7ae5991c3493489b1e188831"
+    },
+    "seasonal-and-moment-marketing": {
+      "source": "social-media-skills/skills",
+      "commit": "f28cef2b7067ec64e79c9d85421c022c06659e03",
+      "sourceType": "github",
+      "skillPath": "skills/seasonal-and-moment-marketing/SKILL.md",
+      "computedHash": "8ef867c99e62c779ef9305b906e79a43efc650d081b944da6f59172af9c8f710"
+    },
+    "social": {
+      "source": "coreyhaines31/marketingskills",
+      "commit": "5b2b400eec1e7e1cec76245a715d0b0d4fd2a9c1",
+      "sourceType": "github",
+      "skillPath": "skills/social/SKILL.md",
+      "computedHash": "d4e3f754e4f6a1ef99a79f038656f53ae7d560492f06c6be075b400c614b20d4"
     },
     "social-listening-brief": {
       "source": "ScrapeCreators/social-media-research-skills",

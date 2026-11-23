@@ -1,0 +1,338 @@
+Brand guidelines
+versie 3.25 | augustus 2026
+Brand guidelines   Introductie
+LookyBooky
+
+
+
+
+                   LookyBooky in het kort
+
+                   LookyBooky selecteert lokale restaurants, beachclubs, winkels en activiteiten die echt
+                   de moeite waard zijn. Geen eindeloos aanbod, maar zorgvuldig gekozen lokale
+                   favorieten. Met één pass ontdekken bezoekers deze plekken én profiteren ze direct
+                   van aantrekkelijke deals, zoals 10% korting, €10 korting of 2-for-1.
+
+
+
+
+                   Maar LookyBooky draait om meer dan voordeel. Bij aankoop van een LookyBooky
+                   Pass wordt via CleanHub 1 kg ocean-bound waste verwijderd. Daarnaast gaat 1% van
+                   de lokale bestedingen via LookyBooky naar lokale impact- en clean-upprojecten. Zo
+                   maakt elke deal ook aantoonbaar verschil.
+
+
+                   De merkbelofte
+
+
+                   Explore more. Spend less. Make an impact.
+
+
+
+
+                                                          2
+Brand guidelines   Inhoudsopgave
+LookyBooky
+
+
+
+
+                   1   Merkbasis                 pag 04
+
+
+
+                   2   Logo                      pag 05-06
+
+
+
+                   3   Typografie en kleur       pag 07-08
+
+
+
+                   4   Fotografie                pag 09
+
+
+
+                   5   Doorvoering               pag 10-11
+
+
+
+
+                                             3
+Brand guidelines                     Merkbasis
+LookyBooky
+
+
+
+
+Drie merkbeloften
+
+                                     01                                       02                                       03
+Een zorgvuldig geselecteerd lokaal
+aanbod, direct voordeel en
+meetbare impact vormen samen de
+kern van LookyBooky.
+
+                                     Explore more                             Spend less                               Make an impact
+
+                                     Ontdek zorgvuldig geselecteerde          Profiteer direct van heldere,            Steun met iedere pass
+                                     lokale favorieten die echt de            aantrekkelijke deals.                    wereldwijde én lokale clean-up en
+                                     moeite waard zijn.                                                                impact.
+
+
+
+
+                                     Zo voelt LookyBooky
+
+                                     Fris in uitstraling, lokaal in selectie, menselijk in toon en doelgericht in impact.
+
+
+
+
+                                                                             4
+Brand guidelines                     Hoofdlogo
+LookyBooky
+
+
+
+
+Hoofdlogo
+
+Turquoise is de primaire logokleur
+op lichte ondergronden. Gebruik
+het horizontale logo als standaard
+en kies icoon of gestapeld alleen
+wanneer het formaat daarom
+vraagt.
+
+
+
+
+                                                              Horizontaal logo
+
+
+
+
+                                                 Gestapeld logo                  Icoon
+
+
+
+
+                                                                            5
+Brand guidelines                       Logo | plaatsing
+LookyBooky
+
+
+
+
+Vrije ruimte
+
+Houd rondom het logo minimaal de
+hoogte van de letter o vrij. Gebruik
+bij kleine formaten het losse icoon.
+
+
+
+
+                                           x                                          x
+
+
+
+
+                                                              Wit logo op donker en
+                                                              fotografie
+
+
+
+
+                                                          6
+Brand guidelines                   Typografie
+LookyBooky
+
+
+
+
+Waarom deze combinatie?
+
+Poppins geeft het merk warmte en
+                                   Poppins                                                                           Inter
+herkenning. Inter maakt deals,
+prijzen en praktische informatie   Semibold 600 / Bold 700                                                           Regular 400 / Medium 500 / Semibold 600
+snel scanbaar op ieder scherm.
+                                   Grote koppen, tussenkoppen en knoppen                                             Body, navigatie, prijzen, labels en formulieren
+
+
+
+
+                                   Explore more.                                                                     Handpicked local favourites, instant perks and
+                                                                                                                     real impact - every purchase makes a
+
+                                   Spend less.                                                                       difference.
+
+
+
+                                   Make an impact.                                                                   Vaste toepassing
+
+
+                                                                                                                     Koppen: Poppins 600/700
+                                                                                                                     Knoppen: Poppins 600
+                                                                                                                     Navigatie: Inter 600
+                                   Implementatie website                                                             Lopende tekst: Inter 400
+                                                                                                                     Prijzen en labels: Inter 600
+                                   De website gebruikt nu nog het systeemfont. Leg Poppins en Inter expliciet vast
+                                                                                                                     Testimonials: Inter 400 Italic
+                                   in CSS voor een consistente merkervaring op ieder apparaat.
+
+
+
+
+                                                                                   7
+Brand guidelines                  Kleurenschema
+LookyBooky
+
+
+
+
+Kleurgebruik
+
+Turquoise opent het merk. Ocean
+geeft leesbaarheid en contrast.
+Coral en Soft Sand ondersteunen
+campagnes, maar zijn nooit
+automatisch aanwezig.
+
+
+
+
+                                  Turquoise                       Ocean
+                                  #18BFCB                         #0E2F39
+                                  Logo / merktoon                 Tekst / contrast
+
+
+
+
+                                  Coral             Soft Sand                        Mist
+                                  #FF6F61           #FFF2CC                          #F3F7F6
+                                  Accent            Zacht vlak                       Witruimte
+
+
+
+
+                                                              8
+Brand guidelines                    Fotografie
+LookyBooky
+
+
+
+
+Twee beeldlagen
+
+Maximaal drie vaste brandbeelden
+bouwen internationale herkenning.
+Bestemmingsbeelden worden
+lokaal aangeleverd en laten de
+echte plekken, mensen en impact
+per bestemming zien.
+
+
+
+
+                                    01 VERWONDERING                                      02 ONTDEKKEN                                 03 IMPACT
+
+                                    Oceaan, vrijheid en nieuwe perspectieven             Samen lokale plekken en verhalen ontdekken   Samen een concreet verschil maken
+
+
+
+
+                                    Brandbeelden - vaste internationale serie                                                                 Bestemmingsbeelden - lokaal aanleveren
+
+                                    •   Maximaal drie beelden; internationaal en niet aan één bestemming gebonden                             Echte lokale favorieten, ondernemers,
+                                                                                                                                              activiteiten, bezoekers en
+                                    •   Filmisch waterperspectief, veel ruimte, beweging en natuurlijk licht
+                                                                                                                                              impactprojecten. Fotografeer
+                                    •   Turquoise en Ocean ontstaan uit water en licht - niet uit een zwaar filter                            spontaan en documentair, zonder
+                                                                                                                                              stockposes. De bestemming mag
+                                    •   Gebruik voor merkverhaal, cover, campagnes en overkoepelende communicatie                             herkenbaar zijn; namen en logo's
+                                                                                                                                              alleen wanneer ze inhoudelijk relevant
+                                                                                                                                              zijn.
+
+
+
+
+                                                                                        9
+Brand guidelines                     Social media
+LookyBooky
+
+
+
+
+Instagram-profielbeeld
+
+Gebruik voor Instagram uitsluitend
+het turquoise beeldmerk op wit. De                                                      Vaste toepassing
+inhoudelijke formats en
+toepassingen worden later
+vastgelegd in het socialmediaplan.                                                      •   Gebruik alleen het turquoise beeldmerk
+
+
+
+                                                                                        •   Plaats het beeldmerk altijd gecentreerd
+
+
+
+                                                                                        •   Houd rondom minimaal 25% vrije ruimte
+
+
+
+                                                                                        •   Controleer de ronde Instagram-uitsnede
+
+
+
+                                                                                        •   Gebruik hier geen wit logo of woordmerk
+
+
+
+
+                                                                                        Vervolg
+
+
+                                                                                        Contentformats, tone of voice, ritme en
+                                     Turquoise beeldmerk op wit - ronde uitsnede
+                                                                                        templates volgen in een apart
+                                                                                        socialmediaplan.
+
+
+
+
+                                                                                   10
+Brand guidelines                  Samenvatting
+LookyBooky
+
+
+
+
+Dagelijks gebruik
+
+Drie regels zijn voldoende voor
+consequente toepassing.
+                                     01                                         02                                       03
+
+
+
+
+                                                                                                                         Leesbaarheid
+
+
+
+                                     Turquoise op licht                         Wit op donker of foto                    Ocean voor tekst
+
+
+
+
+                                  Turquoise opent het merk. Ocean ondersteunt. Fotografie brengt LookyBooky tot leven.
+
+
+
+
+                                                                           11
+

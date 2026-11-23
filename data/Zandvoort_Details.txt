@@ -1,0 +1,135 @@
+Zandvoort, Netherlands: Municipality Profile
+
+1. Location & Geography
+
+-   Location: Zandvoort sits on the North Sea coast in the province of North Holland (Noord-Holland), at approximately 52°22′N, 4°32′E. It lies about 27 km west of Amsterdam and directly adjacent to Haarlem.
+
+-   Area: Total municipal area is 43.97 km² (16.98 sq mi), of which 32.12 km² is land and 11.85 km² is water, giving it a relatively large "water" footprint for its size — largely the North Sea coastline itself. Wikipedia
+
+-   Elevation: Low-lying, around 3 meters above sea level, typical of the Dutch coastal dune belt. Wikipedia
+
+-   Composition: The municipality is not just the beach resort core — it extends inland to include the village of Bentveld, and is bordered by extensive protected dune nature reserves (Kennemerduinen/Zuid-Kennemerland). Wikipedia
+
+-   Climate: Temperate maritime climate (Cfb, Köppen classification) — mild, wet winters and cool summers moderated by the North Sea; frequent, fast-changing precipitation and wind are a defining feature of daily life (relevant to local digital/app behavior below).
+
+-   Geographic significance:
+
+    -   Historically a fishing village (first recorded as "Sandevoerde" around 1100) that transitioned into one of the Netherlands' premier seaside resorts.
+
+    -   Home to Circuit Zandvoort, built largely from wartime rubble after WWII, situated uniquely within the dunes right next to the sea — a rare motorsport circuit with this coastal-dune topography.
+
+    -   Connected to Amsterdam and Haarlem via its own train terminus, Zandvoort aan Zee railway station, with half-hourly services to Haarlem and Amsterdam (increased frequency in summer). Wikipedia
+
+2. Demographics
+
+(Source: Statistics Netherlands/CBS, via CityPopulation.de compilation, latest estimates 2025–2026)
+
+-   Population:
+
+    -   2021 census: 17,168 Wikipedia
+
+    -   2025 estimate: 17,374 Wikipedia
+
+    -   2026 preliminary estimate: 17,326 (figures are preliminary per CBS) citypopulation
+
+    -   Population density: roughly 534 people/km² (based on land area) Wikipedia
+
+-   Gender split (2025 estimate): Males 8,429 / Females 8,945 — a slight female majority, consistent with national trends driven by longer female life expectancy in the older cohorts. citypopulation
+
+-   Age distribution (2025 estimate):
+
+    -   0–17 years: 2,654 citypopulation
+
+    -   18–64 years: 9,936 citypopulation
+
+    -   65+ years: 4,784 citypopulation
+
+    -   Within the younger bands: 0–9 years: 1,355; 10–19 years: 1,636; 20–29 years: 1,553 citypopulation
+
+    -   This skews notably older than the Dutch national average — roughly 27–28% of residents are 65+, well above the national figure (~20.9% nationally, per Dutch demographic data), consistent with Zandvoort's profile as a retirement-friendly coastal town.
+
+-   Nationality / ethnic makeup (2025 estimate):
+
+    -   Dutch nationality: 15,854 citypopulation
+
+    -   European Union (other): 736; Rest of Europe: 331; Other citizenship: 430 citypopulation
+
+    -   By country of origin: Netherlands: 14,633; Other country background: 2,741 citypopulation
+
+    -   Estimate/context: This implies roughly 84–85% Dutch-only heritage, somewhat more homogeneous than Amsterdam but with a meaningful international/expat and EU-migrant minority — plausible given the hospitality/tourism economy pulling in seasonal and service workers, and general North Holland patterns. This should be treated as directionally indicative rather than a precise ethnic breakdown, since CBS reports "migration background" rather than ethnicity per se.
+
+-   Household structures: Zandvoort's own detailed household breakdown wasn't available at the same granularity in this search, so this is an estimate extrapolated from national/regional Dutch trends:
+
+    -   The Netherlands nationally has a high share of single-person households (~40% nationally, higher in tourist/coastal towns with retirees and seasonal workers).
+
+    -   Given the older age skew, expect above-average shares of single-occupant and two-person (empty-nester/retiree) households, alongside a smaller family-household segment concentrated in Bentveld and inland residential areas rather than the beachfront core.
+
+    -   CBS's most recent core-figures release for Zandvoort (2021) recorded 8,299 households — worth citing directly to your reader as a base figure, with the caveat that it predates the most recent population estimate.
+
+3. Digital Behavior
+
+No town-specific (Zandvoort-only) digital-behavior survey exists publicly — the figures below are national Dutch statistics, presented as a reasonable proxy since Zandvoort's demographic profile (older, mixed local/international, high internet penetration as standard across NL) doesn't suggest major deviation except where tourism-driven behavior is noted separately.
+
+Social media (national, 2026 data):
+
+-   WhatsApp remains the most-used daily platform in the Netherlands, followed by Facebook, which itself saw modest growth into 2026. metricool
+
+-   Instagram ranks third for daily use, followed by YouTube; Instagram itself continues to grow (around 8.9 million Dutch users, up roughly 8% year over year, with daily use up about 5%). metricoolmetricool
+
+-   LinkedIn has about 5.8 million Dutch users, reflecting the Netherlands' strong professional-networking culture. metricool
+
+-   By website-detected market share, Facebook leads at 73.2%, Instagram at 57.1%, and LinkedIn at 43.4% among social platforms embedded on Dutch sites. wmtips
+
+-   Instagram penetration nationally reached about 8.69 million users in mid-2026 (≈49% of the population), skewing 54.7% female, with the 25–34 age bracket the single largest user group. napoleoncat
+
+-   Niche-but-relevant: Polarsteps (a travel-diary/journal-sharing app) has around 2.5 million Dutch users — notably relevant to a tourism town like Zandvoort, where both residents in hospitality and visiting tourists actively use travel-logging apps. metricool
+
+Localized/essential Dutch digital services (daily-life apps, not global platforms):
+
+-   DigiD — the national digital-ID app used to log into government services such as tax filing and municipal appointments, paired with MijnOverheid for official correspondence. Near-universal among Dutch residents. wur
+
+-   Tikkie — the ABN AMRO-built payment-request app that has become a cultural shorthand for "going Dutch," used to split bills instantly via WhatsApp, SMS or email. tue
+
+-   Buienradar / Buienalarm — hyperlocal rain-radar and shower-alert apps, essential given the country's unpredictable weather; given Zandvoort's beach-and-outdoor-dependent tourism economy, these apps likely see disproportionately heavy local use compared to inland towns. tue
+
+-   NS Reisplanner / 9292 — train timetable and public-transport planning apps, used weekly if not daily by residents commuting toward Haarlem/Amsterdam. saxion
+
+-   Marktplaats — the dominant Dutch classifieds/marketplace app, with over 8 million monthly visitors nationally, for buying/selling second-hand goods. iamexpat
+
+-   Thuisbezorgd (Just Eat/Takeaway.com's Dutch brand) — the leading food-delivery app, akin to Uber Eats. saxion
+
+-   Albert Heijn app — for the country's largest supermarket chain, used for weekly deals, shopping lists, and a digital loyalty (Bonuskaart) card. tue
+
+-   EasyPark — used for finding and paying for parking, notably relevant given Zandvoort's beach-day parking congestion in summer and during the Grand Prix. tue
+
+-   iDEAL (not directly captured in these searches but standard Dutch financial infrastructure) remains the default Dutch online-payment rail embedded in nearly all e-commerce and banking apps.
+
+4. Economy & Culture
+
+Major local industries:
+
+-   Zandvoort's economy is overwhelmingly tourism- and hospitality-driven. Nearly half of all local employment is tied to tourism, and historically by the 1960s more than half of the local workforce was already employed in the tourism sector — a structural feature of the town for over 60 years, not a recent development. Wikipediagpblog
+
+-   Core sub-sectors: hotels, restaurants, beach pavilions ("strandtenten"), retail, and event/hospitality services tied to the circuit.
+
+Impact of tourism and the F1 circuit:
+
+-   Circuit Zandvoort has existed since 1948, hosting Formula 1 from 1950 through 1985 before losing its permit in 1985 over noise concerns. Zandvoort: Dutch Grand Prix Host & Coastal Town +2
+
+-   The Dutch Grand Prix's return in 2021 (driven largely by home favorite Max Verstappen's rise) reinvigorated the town's global profile. The municipality calculated that a single Formula 1 race weekend generates roughly €26 million in economic boost for the town and supports about 135 full-time jobs. nltimes
+
+-   Important and very current development: 2026 is confirmed as the final year of the Dutch Grand Prix at Zandvoort — the promoter opted not to renew beyond a one-year extension, citing the escalating cost of Formula 1 hosting fees (which rose from an average $31m per race in 2019 to $43m by the most recent season) against a backdrop of a locally imposed "fun tax" on tickets from 2024 onward to cover policing and clean-up costs, and the absence of the sovereign-wealth backing that newer F1 venues enjoy. The final race weekend in August 2026 drew a record 325,000 attendees — the largest of the comeback era. Formula 1 to celebrate final Dutch Grand Prix in 2026 after one year extension at Circuit Zandvoort confirmed +4
+
+-   Local business leaders are explicitly pivoting strategy post-F1: Zandvoort's business community is banking on the town's elevated global visibility ("fantastic marketing machine") to sustain tourism momentum, and hotels and restaurants plan to lean harder into attracting business/corporate visitors, since Formula 1 has already established Zandvoort as a credible business-event destination. This is a critical and very recent (mid-2026) strategic pivot point worth flagging prominently in your report, since it directly affects the town's near-future economic outlook. nltimesnltimes
+
+Lifestyle & general culture:
+
+-   Zandvoort retains a classic Dutch seaside-resort character: wide sandy beaches, extensive dune nature reserves, and beach clubs/pavilions as social hubs.
+
+-   A clothing-optional (nudist) stretch of beach, complete with its own eateries, extends south of the main town — a long-standing and locally normalized feature of Dutch beach culture rather than a fringe curiosity. Wikipedia
+
+-   The town skews toward an older, comfortable, semi-retired demographic outside peak season, with a dramatic seasonal population swell each summer from day-trippers (aided by direct rail links from Amsterdam/Haarlem) and, historically, F1 weekend crowds in the hundreds of thousands.
+
+-   Culturally, it sits at the intersection of "quiet Dutch coastal town" and "internationally recognized motorsport brand" — a duality your report may want to highlight as the town's central identity tension heading into its post-F1 era.
+
+A note on data currency: Population and social-media figures above are the most recent available (2025–2026 CBS/industry estimates); household-structure and ethnic-composition detail is partly extrapolated from national trends where hyperlocal Zandvoort data wasn't granular enough — I've flagged those points inline. Happy to dig deeper into any single section (e.g., a full household-composition breakdown, or historical tourism-revenue trends) if useful for the report.
