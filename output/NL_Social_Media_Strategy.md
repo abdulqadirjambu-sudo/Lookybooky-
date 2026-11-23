@@ -132,8 +132,10 @@ From `seasonal-and-moment-marketing`, gated for brand fit:
 | Date | Moment | Tier | LookyBooky angle | In calendar |
 |---|---|---|---|---|
 | Fri 27 Nov | Black Friday | 1, but counter-positioned | **"Geen countdown. Gewoon €10."** ("No countdown. Just €10.") Dutch sobriety as the difference; no fake discount | Story, 26 Nov |
-| Sat 5 Dec | Pakjesavond (Sinterklaas gift evening) | 1 (fun) | Lootjes trekken (drawing names for gifts) on a €10 budget; **confirm the pass can be given as a gift** | Carousel 3 Dec, Story 5 Dec |
+| Sat 5 Dec | Pakjesavond (Sinterklaas gift evening) | 1 (fun) | Lootjes trekken (drawing names for gifts) on a €10 budget: **the pass can be given as a gift** | Carousel 3 Dec, Story 5 Dec |
 | December | Winter coast, winter storms | Evergreen | Uitwaaien, strandjutten after storms, what's open in winter | 30 Nov, 9, 10, 14, 16 Dec |
+| 15–20 Dec | Kerstgiveaway (Christmas giveaway) | 1 | 3 x 2 passes: one for you, one for who you'd bring | Reel 15 Dec, winners 21 Dec |
+| 19–24 Dec | Last-minute Christmas gifts | 1 | The pass is digital, so it still arrives in time | Story 19 Dec |
 | Sat 19 Dec – 3 Jan | Kerstvakantie (Christmas school holiday) | 1 | A day trip by train, no car | 18–19 Dec |
 | Mon 21 Dec | Kortste dag (shortest day) | 1 | "Nog geen 8 uur licht" (under 8 hours of daylight) | 21 Dec |
 | Fri 1 Jan | Nieuwjaarsduik (New Year's Day dive) | 1 | Poll, plus the organiser's link once confirmed | Story 22 Dec |
@@ -152,10 +154,30 @@ The full day-by-day plan is in **`output/Next_30_Days_Calendar.csv`**. It has 18
 | 24–29 Nov (transition) | – | 25: CleanHub "Opruimen is pas het begin" (carousel, prepared plan #11) | 26: Black Friday Story, no countdown | 27: Thalassa "POV: jij hebt de plek bij het raam" (T4 collab) | Tue: how it works, plus profile fix · Sat: uitwaaien poll · Sun: community |
 | 30 Nov – 6 Dec | 30: "Wat ligt hier nou?" winter beachcombing (T1) | 2: Filoxenia kitchen part 2 (T4 tag) | 3: "Lootjes getrokken? Budget: €10." | 4: "Vaste gast. Betaalt nooit." (gull, T2) | Tue: beach-finds sticker · Sat 5: pakjesavond · Sun: community |
 | 7–13 Dec | 7: "Zandvoort heeft een Kippentrap." (T1) | 9 **10:00**: "Uitwaaien." (T5) | 10: "Strandtenten dicht? Niet allemaal." (saveable) | 11: Sweet Pearl "Kijk naar de kleur." (T4 collab, T3) | Tue: museum · Sat: Sunday plans · Sun: community |
-| 14–20 Dec | 14: "Eén wandeling. Eén tas." (new shoot, T2) | 16: De Haven "Buiten: wind. Binnen: dit." (T4 tag) | 17: "Zandvoort, lang voor de boulevard." (then and now) | 18: Christmas break by train (T1) | Tue: your beach finds · Sat: holiday starts · Sun: community |
-| 21–23 Dec | 21 **10:00**: "De kortste dag." (T5) | 23: "Bedankt, Zandvoort." (T3) | – | – | Tue 22: Nieuwjaarsduik poll |
+| 14–20 Dec | 14: "Eén wandeling. Eén tas." (new shoot, T2) | 16: De Haven "Buiten: wind. Binnen: dit." (T4 tag) | 17: "Zandvoort, lang voor de boulevard." (then and now) | 18: Christmas break by train (T1) | **Tue 15: giveaway Reel 18:00** · Wed: your beach finds · Sat: holiday starts + last-minute gift · Sun: giveaway closes |
+| 21–23 Dec | 21 **10:00**: "De kortste dag." (T5) | 23: "Bedankt, Zandvoort." (T3) | – | – | Mon 21: giveaway winners · Tue 22: Nieuwjaarsduik poll |
 
-**Production notes:** 13 of the 16 feed posts can be cut from the existing library (SA, SP, T, H, JGS, PM, ZV clips and the CleanHub stills). **Three need short shoots:** a gull clip (4 Dec; a fallback is given), the beach walk and bag (14 Dec), and the De Haven fireplace video (16 Dec). The pass-as-gift question (3 Dec) **blocks** that carousel until it's answered.
+**Production notes:** 14 of the 17 feed posts can be cut from the existing library (SA, SP, T, H, JGS, PM, ZV clips and the CleanHub stills). **Three need short shoots:** a gull clip (4 Dec; a fallback is given), the beach walk and bag (14 Dec), and the De Haven fireplace video (16 Dec). The giveaway Reel (15 Dec) needs two phones showing the pass plus existing partner clips.
+
+---
+
+## 5b. Gifting and giveaways
+
+**Gifting (confirmed: passes can be gifted).** Gifting answers a real Dutch habit: lootjes trekken for pakjesavond on a €10–€20 budget, then Christmas. The pass is digital, so it also works as a last-minute gift. Use it in **3 places**: the 3 Dec carousel ("Lootjes getrokken? Budget: €10."), a **"Cadeau"** Highlight with the gift steps and a UTM link, and a "last-minute kerstcadeau" Story on 19 Dec. Keep the tone plain: price, validity, what the receiver gets. No "perfect gift!!" hype.
+
+**Giveaways: use them as a follow-conversion tool, at most once a month.** The audit's biggest leak is converting visitors into followers, and reaching 100 followers unlocks audience data. A giveaway helps both, provided it attracts people who actually want a day in Zandvoort, not prize hunters.
+
+| Element | Rule |
+|---|---|
+| Prize | **2 passes per winner** ("one for you, one for who you bring"). The friend gets a reason to come too. December: 3 winners x 2 passes. |
+| Entry | Follow @lookybooky.nl + tag **one** person you'd bring + say where you'd go first. The last step filters out prize hunters and gives you real local language and ideas. No "tag 3 friends", no reshare requirement. |
+| Format | A Reel (the discovery format), co-hosted with **one partner** as Collab co-author, so both audiences see it. Partner follow optional. |
+| Length | 5–6 days. Remind in Stories on days 1, 3 and 5. Announce winners in Stories the day after it closes, and DM them. |
+| Legal (NL) | Publish **actievoorwaarden** (terms) before posting, in line with the **Gedragscode Promotionele Kansspelen**: organiser, period, prize, how winners are drawn and notified, free to enter, 18+ or parental consent, privacy. Prize values here are low; check the current kansspelbelasting threshold if prizes grow. |
+| Instagram rules | State the promotion isn't run by Instagram. Don't ask people to tag themselves in content they're not in. |
+| Measurement | **Excluded from all tests and reach baselines.** Log giveaway follows separately and check how many are still following 30 days later (target 70% or more). If retention is under 50%, change the entry mechanic before the next one. |
+
+**Calendar:** launch Tue 15 Dec 18:00, closes Sun 20 Dec 23:59, winners Mon 21 Dec. **Next ones:** one per month, each co-hosted with a different partner (January: a "Nieuwjaar aan zee" giveaway; February: a Valentine's "2-voor-1 date" with a restaurant partner, if its deal allows).
 
 ---
 
@@ -172,6 +194,7 @@ Built with `goals-and-kpis` (NORTH): one North Star, four supporting KPIs, each 
 | Website link taps per month (plus UTM sessions in analytics) | ~2.3 (7 in 90 days) | 10 | 20 | 30 |
 | *Guardrail:* carousel saves per 100 reach | 0 | 0.5 | 1.0 | 1.5 |
 | *Guardrail:* internal or partner DM sends logged | not logged | 100% logged | 100% | 100% |
+| *Guardrail:* giveaway followers still following after 30 days | n/a | logged | ≥70% | ≥70% |
 
 **Action thresholds:**
 - **Three Reels in a row with skip rate above 65%:** re-cut openings with action in frame 1 before posting anything else.
@@ -205,7 +228,7 @@ At 100–2,000 reach per post, classic significance testing isn't possible (`ab-
 |---|---|---|
 | Tue 24 Nov | Profile rename, Dutch-first bio, UTM link, 3 Highlights, pins | Social lead |
 | Tue 24 Nov | Set the Metricool brand timezone to Europe/Amsterdam; start the DM-send log | Social lead |
-| Wed 25 Nov | Confirm whether the pass can be gifted, for the 3 Dec carousel | Product / Isabel |
+| Wed 25 Nov | Write the gift steps for the 3 Dec carousel and the 'Cadeau' Highlight; draft the giveaway actievoorwaarden and pick the co-host partner | Product / Isabel |
 | Wed 25 Nov | Partner emails: Collab acceptance, plus filming slots for the gull, beach walk and De Haven fireplace | Partnerships |
 | Weekly, Fri | Cut and approve the next week's 4 feed posts (the "approve 3 first" rule from the November plan stays) | Abdul (edit) + reviewer |
 | Daily | 15-min community block; log post metrics at 48h and 7d | Social lead |
