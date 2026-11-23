@@ -1,0 +1,96 @@
+{
+  "version": 2,
+  "skills": {
+    "ad-library-teardown": {
+      "source": "ScrapeCreators/social-media-research-skills",
+      "commit": "64ba7b4dea71e130d2712ffb6c1c1024b3b7c4b2",
+      "sourceType": "github",
+      "skillPath": "skills/ad-library-teardown/SKILL.md",
+      "computedHash": "11d4c77df86d5947d664551d5f84ad6fb8f8c474a24cabbecf067c18c6fcca57"
+    },
+    "audience-research": {
+      "source": "ScrapeCreators/social-media-research-skills",
+      "commit": "64ba7b4dea71e130d2712ffb6c1c1024b3b7c4b2",
+      "sourceType": "github",
+      "skillPath": "skills/audience-research/SKILL.md",
+      "computedHash": "c528dbf8db3fde4adefb03b790f42d7409fe29caf47b924dd88c359334c07cc7"
+    },
+    "comment-mining": {
+      "source": "ScrapeCreators/social-media-research-skills",
+      "commit": "64ba7b4dea71e130d2712ffb6c1c1024b3b7c4b2",
+      "sourceType": "github",
+      "skillPath": "skills/comment-mining/SKILL.md",
+      "computedHash": "b04130f646589c2c0ab729fc11a5e22fbb22ff3e38dfbca938d81a3734e20101"
+    },
+    "competitor-social-research": {
+      "source": "ScrapeCreators/social-media-research-skills",
+      "commit": "64ba7b4dea71e130d2712ffb6c1c1024b3b7c4b2",
+      "sourceType": "github",
+      "skillPath": "skills/competitor-social-research/SKILL.md",
+      "computedHash": "23bcf408b2e8aaf38f173da6bbb599cfcbbd0963814252bd3e4a9ca84bbc1008"
+    },
+    "content-repurposing": {
+      "source": "ScrapeCreators/social-media-research-skills",
+      "commit": "64ba7b4dea71e130d2712ffb6c1c1024b3b7c4b2",
+      "sourceType": "github",
+      "skillPath": "skills/content-repurposing/SKILL.md",
+      "computedHash": "047e1246c65bbdf72d786a82a478616f66b862c2dbe20562366a1c38cd9edb40"
+    },
+    "creator-profile-teardown": {
+      "source": "ScrapeCreators/social-media-research-skills",
+      "commit": "64ba7b4dea71e130d2712ffb6c1c1024b3b7c4b2",
+      "sourceType": "github",
+      "skillPath": "skills/creator-profile-teardown/SKILL.md",
+      "computedHash": "8008480d4fdf40be8c63792fae39955ba47a76f0a0ec5d32f2c4e2a310103b12"
+    },
+    "influencer-prospecting": {
+      "source": "ScrapeCreators/social-media-research-skills",
+      "commit": "64ba7b4dea71e130d2712ffb6c1c1024b3b7c4b2",
+      "sourceType": "github",
+      "skillPath": "skills/influencer-prospecting/SKILL.md",
+      "computedHash": "048d676462a1f2db62e36b80451a81097fa390358449781ade1bc60ecb1c6a23"
+    },
+    "outlier-post-finder": {
+      "source": "ScrapeCreators/social-media-research-skills",
+      "commit": "64ba7b4dea71e130d2712ffb6c1c1024b3b7c4b2",
+      "sourceType": "github",
+      "skillPath": "skills/outlier-post-finder/SKILL.md",
+      "computedHash": "54e835e98db740c3ef6cda2c5f273b2b41bf82331168884bd44d03ead2d44457"
+    },
+    "product-demand-research": {
+      "source": "ScrapeCreators/social-media-research-skills",
+      "commit": "64ba7b4dea71e130d2712ffb6c1c1024b3b7c4b2",
+      "sourceType": "github",
+      "skillPath": "skills/product-demand-research/SKILL.md",
+      "computedHash": "20c718d8328ce1241095675fdfff7ffddabc73a9f949d8c750761a5467b04610"
+    },
+    "scrapecreators-api": {
+      "source": "ScrapeCreators/social-media-research-skills",
+      "commit": "64ba7b4dea71e130d2712ffb6c1c1024b3b7c4b2",
+      "sourceType": "github",
+      "skillPath": "skills/scrapecreators-api/SKILL.md",
+      "computedHash": "5bf942c823d97c3ac154d8c540378dd2a969259e7ae5991c3493489b1e188831"
+    },
+    "social-listening-brief": {
+      "source": "ScrapeCreators/social-media-research-skills",
+      "commit": "64ba7b4dea71e130d2712ffb6c1c1024b3b7c4b2",
+      "sourceType": "github",
+      "skillPath": "skills/social-listening-brief/SKILL.md",
+      "computedHash": "f4ea9be2e28247b7da86e9a164664e8bff923f126d148f7b419b2978ccbe87f7"
+    },
+    "transcript-intelligence": {
+      "source": "ScrapeCreators/social-media-research-skills",
+      "commit": "64ba7b4dea71e130d2712ffb6c1c1024b3b7c4b2",
+      "sourceType": "github",
+      "skillPath": "skills/transcript-intelligence/SKILL.md",
+      "computedHash": "20a2e054b02e149ba822740f094ca504b4327b98899134a3c53a55fa3abb9515"
+    },
+    "trend-discovery": {
+      "source": "ScrapeCreators/social-media-research-skills",
+      "commit": "64ba7b4dea71e130d2712ffb6c1c1024b3b7c4b2",
+      "sourceType": "github",
+      "skillPath": "skills/trend-discovery/SKILL.md",
+      "computedHash": "9011bf7fbb1246fdebfc89499a8b0bab049589e34a7f94cb3dd204af152a5501"
+    }
+  }
+}
