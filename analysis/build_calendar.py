@@ -1,6 +1,6 @@
 """Builds output/Next_30_Days_Calendar.csv: the December 2026 plan (1-31 Dec, Europe/Amsterdam, CET)."""
 import csv, datetime as dt
-F = ["date","day","time_CET","format","funnel_stage","pillar","working_title","hook_onscreen_NL","visual_direction",
+F = ["date","day","time_CET","format","funnel_stage","pillar","working_title","hook_onscreen_NL","visual_direction","media",
      "caption_NL","caption_EN_line","CTA","hashtags","collab_or_partner","story_support","primary_KPI","test_id","checks_before_posting"]
 P1, P2, P3, P4, P5 = "1 Kijk beter aan zee (signature)", "2 Van dichtbij bij lokale adressen", "3 Het dorp achter de boulevard", "4 Herkenbaar aan zee", "5 Slim uit in Zandvoort (conversion)"
 rows = [
@@ -176,11 +176,53 @@ rows += [
  "","","Link: organiser page","","","Organiser link","Link taps","","Only with confirmed 1 Jan dive details (organiser, time, place)."),
 ]
 rows.sort(key=lambda r: r[0])
+# --- Media from the LookyBooky Dropbox (Images / Videos) and the Zandvoort Marketing beeldbank ---
+# Image names drop the LB2026_KimKramer_ prefix; .MOV = video. BB = beeldbankzandvoortmarketing.nl (editorial use only, credit the photographer).
+MEDIA = {
+"2026-12-01":"Videos/Explanation video: U03.MOV, U06.MOV (or reshare the 16 Oct how-it-works Reel). Still: Images/Use of LookyBooky ZM09 (phone at the museum scanner).",
+"2026-12-02":"Videos/Locaties/Filoxenia/Keuken : Bar Filoxenia (6 clips) + F21.MOV / F22.MOV (bar). F23/F24.MOV (plating) were likely used on 13 Nov: only reuse with a different opening.",
+"2026-12-03":"S1 Images/Use of LookyBooky ZM13 (payment screen reading 'Looky Booky'). S2 ZM09/ZM10 (pass scanned at the museum). S3 Images/Locations/Thalassa T09 (window seat). S4 Images/Beach images/Jutten (Juttersgeluk) JG01. S5 ZM10 or T27/T28 (QR code at the bill).",
+"2026-12-04":"No gull-with-food shot exists. Use Videos/Zandvoort IMG_5622.MOV (gulls) cut to Images/Locations/Thalassa T07/T08 (fish dish) or a Thalassa table clip (T25.MOV). Trial variant opens on T25.MOV.",
+"2026-12-05":"No photo: brand template (Turquoise/Mist). Optional BB Evenementen › Sinterklaas intocht (credit photographer; no close-ups of children).",
+"2026-12-07":"Videos/Locaties/Mel's M03.MOV (Kippentrap steps with chicken tiles) + Videos/Zandvoort IMG_5649.MOV. Stills: Images/Locations/Mel's M01 (steps by the Delft-blue tile wall), M02/M03 (tile mural).",
+"2026-12-08":"Images/Use of LookyBooky ZM18 (museum) + Videos/Explanation video/Zandvoorts Museum clips. Reshare the 11 Nov carousel.",
+"2026-12-09":"Images/Beach images/Algemeen SA06, SA07 (hair blowing, walking). Videos: Locaties/De Haven H02.MOV, Strand/Algemeen SA23.MOV, Strand/Zandvoort ZV23.MOV. Light is autumnal: no weather claim.",
+"2026-12-10":"One image per address: Thalassa T09 · De Haven H09 (fire pit) · Filoxenia F08 (overhead spread) · Sweet Pearl SP04 (cup under neon) · Mel's M01 · Zandvoorts Museum ZM18. Optional 7th: Noya (Images/Locations/Noya) if confirmed open.",
+"2026-12-11":"Videos/Locaties/Sweet Pearl SP09.MOV (matcha poured into branded cup under the neon) + SP10.MOV (finished drink). Trial variant: add SP06.MOV (waffles) for the 14s cut.",
+"2026-12-12":"Reshare the 10 Dec carousel.",
+"2026-12-14":"No new shoot needed: Videos/Strand/Jutten (Juttersgeluk)/op het strand JGS05.MOV, JGS09.MOV + stills JG01-JG03 (grabber lifts a plastic ring next to the Juttersgeluk bucket). Trial variant opens on a wide Strand/Algemeen clip. Check these aren't the openings used on 9 Oct / 4 Nov.",
+"2026-12-15":"Images/Use of LookyBooky ZM13 (pass on screen), Images/Locations/Thalassa T27/T28 (QR at the bill); Videos/Locaties/Thalassa T42.MOV, Explanation video U03/U06.MOV; plus 2-3 clips from the co-host partner's folder.",
+"2026-12-16":"Videos/Locaties/De Haven van Zandvoort: H13.MOV (waiter serving) opens, H20.MOV (flames close-up), H14/H15.MOV (wine with the fire behind). Still: H09. No new shoot needed.",
+"2026-12-17":"Today: Images/Zandvoort ZV02 (town hall), ZV15 (church spire street), ZV11 (station), ZM18 (museum). Then: CC0 archive images (e.g., Noord-Hollands Archief). Optional BB Evenementen › 200 jaar badplaats / Open Monumentendagen (credit photographer).",
+"2026-12-18":"Images/Zandvoort ZV11 + Extra images vertical ZV18 (station with NS logo); Videos/Zandvoort IMG_5642, IMG_5389, IMG_5643.MOV (station); beach SA23.MOV; lunch Thalassa T25.MOV. No train in any clip: open on the station, not a train.",
+"2026-12-19":"ZV11 (station) + reshare 10 Dec carousel. Family idea: Videos/Locaties/Thalassa/Speeltuin clips, if the playground is open in winter.",
+"2026-12-20":"Only if an event is confirmed: BB Evenementen › IJsbaan (credit photographer).",
+"2026-12-21":"No sunset in the Dropbox. BB Strand › Zonsondergang (non-promotional post, credit the photographer; confirm with Zandvoort Marketing). Fallback: Images/Beach images/Zandvoort SZ02/SZ03 (backlit hazy sea).",
+"2026-12-22":"BB Evenementen › Nieuwjaarsduik (credit photographer; event info only).",
+"2026-12-23":"Montage: F23.MOV (Filoxenia), SP09.MOV (Sweet Pearl), JGS05.MOV (Juttersgeluk), M03.MOV (Kippentrap), T25.MOV (Thalassa), H20.MOV (De Haven). Own footage only.",
+"2026-12-24":"Videos/Strand/Algemeen: a calm sea clip (e.g., SA23.MOV). Optional BB Dorp › Winter.",
+"2026-12-26":"Images/Beach images/Algemeen SA07 (walking in the wind) or SA23.MOV.",
+"2026-12-28":"Images/Beach images/Jutten (Juttersgeluk) JG09 (rope beside a jellyfish) + Videos JGS01.MOV. Use clips not used on 9 Oct, 4 Nov or 14 Dec.",
+"2026-12-29":"Poll on brand template (no oliebol photo in the library). Reshare the 28 Dec Reel.",
+"2026-12-30":"SA06/SA07 (walking in the wind) or ZV23.MOV, then Videos/Locaties/De Haven H14.MOV (wine by the fire); end card.",
+"2026-12-31":"BB Evenementen › Nieuwjaarsduik (credit photographer) + calm sea clip SA23.MOV.",
+}
+# visual / check updates that follow from the inventory
+OVR = {
+"2026-12-04": {7:"Main cut: gulls (IMG_5622.MOV) in frame 1, hard cut to the fish dish at Thalassa with the overlay 'Vaste gast. Betaalt nooit.' Trial variant: opens on the Thalassa table (T25.MOV), gulls at 2s.",
+               16:"No gull-with-food footage exists: the joke relies on the cut. Don't feed gulls for any new shot."},
+"2026-12-14": {5:"Eén strandwandeling, één emmer (Juttersgeluk)", 6:"Eén wandeling. Eén emmer.", 7:"Main cut: frame 1 the grabber lifting a plastic ring (JG01-JG03 / JGS05.MOV), end on the Juttersgeluk bucket. Trial variant opens on a wide empty beach. Documentary style.",
+               8:"Eén strandwandeling. Eén emmer.\nOp pad met Juttersgeluk langs het strand van Zandvoort: wat er niet hoort, gaat mee.\nZin om een keer mee te gaan? De details staan in de app.",
+               9:"EN: One beach walk, one bucket. Out with Juttersgeluk on Zandvoort beach.",
+               16:"Existing Juttersgeluk footage: don't call it an official clean-up and don't state weights. Check the openings differ from 9 Oct and 4 Nov."},
+"2026-12-16": {16:"Check the current offer in the app."},
+}
+rows = [tuple(OVR.get(r[0], {}).get(i, v) for i, v in enumerate(r)) for r in rows]
 assert len(rows) == 31, len(rows)
 start = dt.date(2026, 12, 1)
 with open("output/Next_30_Days_Calendar.csv", "w", newline="", encoding="utf-8") as f:
     w = csv.writer(f); w.writerow(F)
     for i, r in enumerate(rows):
         d = dt.date.fromisoformat(r[0]); assert d == start + dt.timedelta(days=i), (d, i)
-        w.writerow([r[0], d.strftime("%a")] + list(r[1:]))
+        w.writerow([r[0], d.strftime("%a")] + list(r[1:8]) + [MEDIA.get(r[0], "")] + list(r[8:]))
 print("ok", len(rows))

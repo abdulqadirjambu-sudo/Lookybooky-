@@ -30,10 +30,10 @@ for r in rows:
 <div class="bh"><span class="bd">{ds(r)} · {E(r["time_CET"])}</span><span class="chip {k}">{E(r["format"])}</span>{'<span class="badge">Giveaway</span>' if give else ''}</div>
 <h3>{E(r["working_title"])}</h3>
 <div class="sub">{E(pil(r["pillar"]))} · {E(r["funnel_stage"])} · Test: {E(r["test_id"] or "–")}</div>
-<dl>{kv("Hook on screen", r["hook_onscreen_NL"])}{kv("Visual", r["visual_direction"])}{kv("Caption (NL)", r["caption_NL"], "cap")}{kv("English line", r["caption_EN_line"])}{kv("CTA", r["CTA"])}{kv("Hashtags", r["hashtags"])}{kv("Partner", r["collab_or_partner"])}{kv("Stories", r["story_support"])}{kv("Watch", r["primary_KPI"])}{kv("Check first", r["checks_before_posting"], "check")}</dl></div>''')
+<dl>{kv("Hook on screen", r["hook_onscreen_NL"])}{kv("Visual", r["visual_direction"])}{kv("Media", r["media"], "media")}{kv("Caption (NL)", r["caption_NL"], "cap")}{kv("English line", r["caption_EN_line"])}{kv("CTA", r["CTA"])}{kv("Hashtags", r["hashtags"])}{kv("Partner", r["collab_or_partner"])}{kv("Stories", r["story_support"])}{kv("Watch", r["primary_KPI"])}{kv("Check first", r["checks_before_posting"], "check")}</dl></div>''')
 BRIEFS = "\n".join(briefs)
 
-stories = "".join(f'<tr><td class="nw">{ds(r)}</td><td class="nw">{E(r["time_CET"]) if r["time_CET"]!="—" else "–"}</td><td><b>{E(r["working_title"])}</b><br><span class="muted">{E(r["visual_direction"])}</span></td><td>{E(r["CTA"])}</td><td class="muted">{E(r["checks_before_posting"])}</td></tr>' for r in rows if kind(r["format"]) in ("stories", "community", "rest"))
+stories = "".join(f'<tr><td class="nw">{ds(r)}</td><td class="nw">{E(r["time_CET"]) if r["time_CET"]!="—" else "–"}</td><td><b>{E(r["working_title"])}</b><br><span class="muted">{E(r["visual_direction"])}</span>{("<br><span class=\"mt\">Media: " + E(r["media"]) + "</span>") if r["media"] else ""}</td><td>{E(r["CTA"])}</td><td class="muted">{E(r["checks_before_posting"])}</td></tr>' for r in rows if kind(r["format"]) in ("stories", "community", "rest"))
 
 HTML = f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><title>LookyBooky Zandvoort · December 2026 Instagram plan</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:ital,wght@0,400;0,600;1,400&display=swap">
@@ -97,6 +97,8 @@ dl {{ margin:0; display:grid; gap:1.6mm; }}
 .kv dd {{ margin:0; }}
 .kv.cap dd {{ background:var(--mist); padding:1.5mm 2.5mm; }}
 .kv.check dd {{ background:var(--sand); padding:1.5mm 2.5mm; }}
+.kv.media dd {{ border-left:3px solid var(--t); padding-left:2.5mm; }}
+.mt {{ font-size:8pt; }}
 .foot {{ margin-top:8mm; font-size:8pt; color:var(--mut); border-top:1px solid var(--b); padding-top:3mm; }}
 </style></head><body>
 
@@ -161,6 +163,17 @@ dl {{ margin:0; display:grid; gap:1.6mm; }}
 </div>
 <p class="muted" style="margin-top:3mm;font-size:8.5pt">Our evening posts reach a median of 182 accounts against 53 at midday. If production is tight, drop the Monday Reel: a steady 3 a week beats an abandoned 4.</p></div>
 
+<div class="sec"><div class="eyebrow">Images and video</div><h2 style="font-size:14pt">Where the media comes from</h2>
+<div class="grid2">
+  <div><ul class="tight">
+    <li><b>Our own library first</b> (Dropbox "Images" and "Videos", 468 files): every feed post uses it. Image names below drop the <i>LB2026_KimKramer_</i> prefix; .MOV files are videos.</li>
+    <li><b>Codes:</b> ZV village (images) / beach (videos) · ZM, U Zandvoorts Museum and the explanation video · SA, SZ beach · JG, JGS Juttersgeluk · F Filoxenia · H De Haven · M Mel's · N Noya · SP Sweet Pearl · T Thalassa · IMG_ iPhone village clips.</li>
+    <li><b>No new shoots needed</b> for December. The gull Reel works with a cut (gulls, then a fish dish), the beach walk uses Juttersgeluk footage, De Haven's fire is on video.</li>
+  </ul></div>
+  <div class="box"><h3>Zandvoort Marketing beeldbank</h3><p style="margin-top:2mm;font-size:9pt">beeldbankzandvoortmarketing.nl states: <i lang="nl">"Vermeld altijd de naam van de fotograaf. Foto's zijn alleen voor redactioneel gebruik."</i> So we use it only where our library has a gap and the post sells nothing: the shortest-day Reel (sunset), the Nieuwjaarsduik and event Stories. Always credit the photographer by name, and ask Zandvoort Marketing to confirm this use before 21 Dec.</p>
+  <p style="font-size:9pt;margin-top:2mm"><b>Gaps in our own library:</b> no sunset, no train, no gull next to food, nothing Christmassy or wintry. Worth adding to the next shoot.</p></div>
+</div></div>
+
 <div class="sec grid2">
   <div><h2 style="font-size:14pt">Gifting</h2><ul class="tight">
     <li><b>3 Dec</b> carousel: <i lang="nl">"Lootjes getrokken? Budget: €10."</i></li>
@@ -211,7 +224,8 @@ dl {{ margin:0; display:grid; gap:1.6mm; }}
 <table><tr><th>Task</th><th>Owner</th><th>By</th></tr>
 <tr><td>Profile fix: rename, Dutch-first bio, UTM link, Highlights, pinned posts; Metricool timezone to Europe/Amsterdam</td><td>Social lead</td><td>30 Nov</td></tr>
 <tr><td>Gift steps for the 3 Dec carousel and the Cadeau Highlight</td><td>Product</td><td>1 Dec</td></tr>
-<tr><td>Short shoots: gull clip (4 Dec), beach walk with a bag (14 Dec), De Haven fireplace video (16 Dec)</td><td>Abdul + partners</td><td>Before each date</td></tr>
+<tr><td>Pull the listed files from Dropbox for each week's edits; check Juttersgeluk and Filoxenia openings differ from the October/November posts</td><td>Abdul</td><td>Weekly</td></tr>
+<tr><td>Ask Zandvoort Marketing to confirm using beeldbank photos (sunset, Nieuwjaarsduik) with photographer credit</td><td>Social lead</td><td>15 Dec</td></tr>
 <tr><td>Giveaway: co-host partner, actievoorwaarden published</td><td>Social lead</td><td>12 Dec</td></tr>
 <tr><td>Confirm event details (Nieuwjaarsduik 1 Jan, any winter events) and partner opening days for 26 Dec</td><td>Social lead</td><td>Before each Story</td></tr>
 <tr><td>Native-speaker proof of all Dutch copy, one week ahead</td><td>Reviewer</td><td>Weekly</td></tr>

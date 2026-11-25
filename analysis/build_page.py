@@ -26,6 +26,7 @@ def day_html(r):
             det.append(f'<div class="kv {cls}"><dt>{label}</dt><dd>{E(val).replace(chr(10), "<br>")}</dd></div>')
     add("Hook on screen", r["hook_onscreen_NL"], "nl")
     add("Visual", r["visual_direction"])
+    add("Media", r.get("media",""))
     add("Caption (NL)", r["caption_NL"], "nl")
     add("English line", r["caption_EN_line"])
     add("CTA", r["CTA"]); add("Hashtags", r["hashtags"])
@@ -310,7 +311,7 @@ footer {{ padding-block:40px; font-size:14px; color:var(--ink-muted); border-top
     <button type="button" id="f-stories" data-f="stories" aria-pressed="false">Stories</button>
   </div>
   {CAL}
-  <p class="small muted" style="margin-top:18px">Three posts need a short shoot: a gull clip (4 Dec, fallback given), the beach walk with a bag (14 Dec) and the De Haven fireplace on video (16 Dec). Every event post waits for the organiser's own confirmation.</p>
+  <p class="small muted" style="margin-top:18px">Every post names its files from our Dropbox library (image names drop the LB2026_KimKramer_ prefix; .MOV is video). No new shoots are needed. Beeldbank Zandvoort Marketing photos are used only for non-promotional posts (sunset, Nieuwjaarsduik), credited to the photographer, as its terms say "alleen voor redactioneel gebruik". Every event post waits for the organiser's own confirmation.</p>
 </div></section>
 
 <section class="alt"><div class="wrap">
