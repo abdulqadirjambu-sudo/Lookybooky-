@@ -9,3 +9,8 @@ carousel05/work/src/
 carousel05/work/fonts/
 carousel05/proofs/
 carousel05/work/crop_*.jpg
+
+# uploaded source binaries (kept locally, text extracts are committed)
+data/raw/*.pdf
+data/raw/*.docx
+analysis/__pycache__/

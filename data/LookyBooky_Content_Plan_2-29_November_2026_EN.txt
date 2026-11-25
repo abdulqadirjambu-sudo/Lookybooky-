@@ -1,0 +1,674 @@
+Abdul, let’s make nine Reels and three carousels over the next four weeks. Some Reels offer a brief feeling; others show a small discovery or action with a visible result. Let the story and usable footage decide the length. Start with the moment; introduce the place afterwards. This is a working production plan: edit week one first, review the results, then adjust the next batch.
+
+All times below are Europe/Amsterdam and proposed test slots. This plan follows the existing calendar, which runs through 1 November. Keep that earlier schedule in place; use this plan for 2–29 November instead of the previous overlapping draft. Check Meta’s queue before scheduling. Nothing here has been published or scheduled.
+
+  --------------------------------------------------------------------------------------------------
+  Date and time   Format              Idea and detailed brief              Status
+  --------------- ------------------- ------------------------------------ -------------------------
+  Mon 02 Nov      Reel 8 seconds      01 Take your break outside           Brief ready
+  12:00                                                                    Edit and checks pending
+
+  Wed 04 Nov      Reel 10 seconds     02 What is that on the beach         Brief ready
+  18:30                                                                    Edit and checks pending
+
+  Fri 06 Nov      Carousel 2 slides   03 Not Delft but Zandvoort           Brief ready
+  12:00                                                                    Edit and checks pending
+
+  Mon 09 Nov      Reel 9 seconds      04 Coastal hair                      Brief ready
+  18:30                                                                    Edit and checks pending
+
+  Wed 11 Nov      Carousel 3 slides   05 The women who walked to Haarlem   Brief ready
+  12:00                                                                    Edit and checks pending
+
+  Fri 13 Nov      Reel 6 seconds      06 Watch the finishing touches       Brief ready
+  18:30                                                                    Edit and checks pending
+
+  Mon 16 Nov      Reel 8 seconds      07 Look up                           Brief ready
+  18:30                                                                    Edit and checks pending
+
+  Wed 18 Nov      Reel 10 seconds     08 Even the walls have a sea view    Brief ready
+  18:30                                                                    Edit and checks pending
+
+  Fri 20 Nov      Reel 8 seconds      09 Two pours and a colour change     Brief ready
+  12:00                                                                    Edit and checks pending
+
+  Mon 23 Nov      Reel 8 seconds      10 A moment without a to do list     Brief ready
+  18:30                                                                    Edit and checks pending
+
+  Wed 25 Nov      Carousel 3 slides   11 What happens after collection     Brief ready
+  18:30                                                                    Edit and checks pending
+
+  Fri 27 Nov      Reel 8 seconds      12 The seat by the window            Brief ready
+  12:00                                                                    Edit and checks pending
+  --------------------------------------------------------------------------------------------------
+
+Every numbered brief contains source links, preview images, exact copy, cut timings, audio direction and a practical fallback. Story instructions and the review checklist follow the twelve briefs.
+
+What we are building on
+
+  ---------------------------------------------------------------------------------------------------------------------------
+  Published content           Views shown   What this suggests testing
+  --------------------------- ------------- ---------------------------------------------------------------------------------
+  Beachcombing Reel           2.5K          Visible action and a purpose
+
+  Coastal screen time Reel    1.8K          A coastal feeling with a relatable message
+
+  CleanHub carousel           799           Impact explained through real people and work
+
+  Sweet Pearl Reel            305           A small setup and payoff
+
+  How LookyBooky works Reel   294           Keep useful explanation available in Stories and Highlights
+
+  Gull post                   161           75 sends displayed; verify in post Insights before treating this as a benchmark
+
+  Thalassa and Haven posts    80 and 77     Give restaurant content a stronger action or recognisable situation
+  ---------------------------------------------------------------------------------------------------------------------------
+
+Source: Isabel’s two Instagram dashboard screenshots. Figures are snapshots at different post ages, not a controlled comparison. Some posts are collaborations. Reach, saves, watch time and paid support are missing. Views are not unique people. The screenshots do not prove that short duration itself caused stronger performance.
+
+How Abdul should edit
+
+Reels: portrait 1080 × 1920. The selected edits are 6–10 seconds where the available footage supports that length. A future story may need 15–30 seconds; do not shorten it just to fit a rule. Start directly with movement or a recognisable view. One headline and a small location label are enough. No logo intro or separate sales end card. Keep the offer out of the opening. Carousels: consistent 1080 × 1350 crops across each set, with faces and actions intact.
+
+Use the existing LookyBooky templates, Poppins 600/700 headlines and Inter 400/600 labels. Natural colour; white text where legible, Ocean #0E2F39 on Mist #F3F7F6 where needed. Turquoise #18BFCB as an accent. Keep the actual logo and its clear space. No new visual identity or heavy dark overlay.
+
+No voice-over is required for these short Reels. The exact overlays in the cut lists carry the full message. If VO is added, record only those words and time verbatim subtitles to the recording; remove the competing headline. Do not let the narration describe an action before it appears.
+
+What we take from Janet Newenham
+
+Her camera portrait, carpet search and street-food examples begin with a specific experience. Use that principle: one question or action, real evidence, then an answer or result. Do not copy an Afghanistan hook onto Zandvoort. Do not invent first-person reactions, dialogue or an experience that the footage does not record. Her public likes and comments do not establish why a Reel travelled or guarantee the same outcome here.
+
+Reference Reel about a camera portrait
+
+Music and current formats
+
+Later’s trend roundup dated 23 October includes a roughly seven-second single-scene format and mini-vlogs. We borrow brevity and clear scenes, not a claim that our hooks are viral. Our own results determine the subjects. Archive footage does not support fake timestamps or a claimed continuous day.
+
+Each Reel has an audio direction. Abdul selects a track from the business account or a licensed library, then adds its exact URL and used segment to the edit preview. Check availability and fit within 24 hours of posting. If no current sound fits, use the stated licensed instrumental or usable original sound. Availability in-app does not establish advertising rights.
+
+Trend observations checked 26 October 2026
+
+Sources: selected originals have been visually sampled. Final trims still need full-speed review for movement and sound. Local file links below work on Isabel’s Mac; shared-folder links work for Abdul, using the printed subfolder and exact filename. No direct-file Dropbox link is invented.
+
+01 Take your break outside
+
+Monday 02 November · 12:00 · Instagram Reel 8 seconds
+
+Consumer value: A small invitation to step away from the screen and enjoy the coast.
+
+[] []
+
+Previews in edit order: SA06 · SA13. Use the linked originals.
+
+  -----------------------------------------------------------------------------------------------------------------------------
+  Position   Source and trim   Picture and exact on screen copy
+  ---------- ----------------- ------------------------------------------------------------------------------------------------
+  0–4s       SA06 0.5–4.5s     Open on the wide sky and beach. One headline: “Take your / break outside.”
+
+  4–8s       SA13 0.5–4.5s     Move closer to the shoreline. Keep the same headline until 6s, then a small “Zandvoort” label.
+  -----------------------------------------------------------------------------------------------------------------------------
+
+Caption to copy
+
+Your next break could look like this.
+A little sea air in Zandvoort. A local stop when you feel like it.
+Discover more with LookyBooky.
+Send this to someone who needs to step away from their screen.
+#Zandvoort #LookyBooky
+
+Audio: Warm mellow instrumental, 75–90 BPM; no frantic sale sound. Fallback: clean sea ambience. If a current relaxed sound fits and is licensed, save its exact link before export.
+
+Why this post: Builds on the strong coastal Reel with a new opening shot and invitation. No claim that these are today’s conditions.
+
+Test: Can a direct invitation repeat the coastal Reel’s sharing signal? Track shares per reach and average watch time / 8 seconds.
+
+Check: Starts after the previous plan ends on 1 November. Check the queue for duplicate footage. No weather promise or fabricated promotion.
+
+Alternative: Use SA06 alone for seven seconds if the cut to foam interrupts the mood.
+
+LB2026_SA06.MOV | Strand/Algemeen
+
+LB2026_SA13.MOV | Strand/Algemeen
+
+Shared source folder · Abdul to edit, preview and confirm checks.
+
+02 What is that on the beach
+
+Wednesday 04 November · 18:30 · Instagram Reel 10 seconds
+
+Consumer value: Makes the viewer notice a specific piece of litter and shows a way to take part locally.
+
+[] [] []
+
+Previews in edit order: JGS10 · JGS04 · JGS03. Use the linked originals.
+
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Position   Source and trim   Picture and exact on screen copy
+  ---------- ----------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------
+  0–4s       JGS10 0.5–4.5s    Start close on the tangled litter beside the grabber. Text: “That is not seaweed.” Let viewers identify what is there; no invented material name.
+
+  4–7s       JGS04 0.5–3.5s    Show the person collecting litter. Text: “A closer look. A small action.” This is another moment in the activity, not proof of the same item being lifted.
+
+  7–10s      JGS03 0.5–3.5s    Wider beach and participant. Label: “Beachcombing with Juttersgeluk”.
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Caption to copy
+
+Not everything on the beach belongs there.
+A closer look with Juttersgeluk. Discover the local beachcombing activity through LookyBooky and check the listing for booking details.
+What’s the oddest thing you’ve found on a beach?
+#Zandvoort #Juttersgeluk #LookyBooky
+
+Audio: Gentle acoustic instrumental, about 85–100 BPM. Keep usable surf underneath; no vocals. Fallback: clean original beach sound only.
+
+Why this post: Our best-viewed recent Reel showed doing something on the beach. This tests a closer litter detail and a question, rather than repeating its original opening.
+
+Test: Does a specific visual discovery hold attention? Average watch time / 10 seconds, relevant comments and activity-link taps. Compare with the earlier action Reel after seven days.
+
+Check: Compare this opening with Abdul’s published 9 October edit. These clips show an activity, not a documented official cleanup session or a measured result. Keep it separate from CleanHub.
+
+Alternative: If these shots repeat the published October Reel, reshare that Reel in Stories and move the prepared 23 November coastal Reel into this feed slot. Do not publish the replacement twice; leave its later slot for the next best confirmed local story.
+
+LB2026_JGS10.MOV | Strand/Jutten (Juttersgeluk)/Juttersgeluk op het strand
+
+LB2026_JGS04.MOV | Strand/Jutten (Juttersgeluk)/Juttersgeluk op het strand
+
+LB2026_JGS03.MOV | Strand/Jutten (Juttersgeluk)/Juttersgeluk op het strand
+
+Shared source folder · Abdul to edit, preview and confirm checks.
+
+03 Not Delft but Zandvoort
+
+Friday 06 November · 12:00 · Instagram Carousel 2 slides
+
+Consumer value: Reveals a recognisable local detail and shows exactly where to find an evening stop.
+
+[] []
+
+Previews in edit order: PM02 · PM01. Use the linked originals.
+
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Position   Source and trim       Picture and exact on screen copy
+  ---------- --------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Slide 1    PM02 portrait photo   Crop towards the blue-and-white tiles and window, keeping enough context. Text: “Blue and white. / But where?” Keep the Mel’s sign outside this crop; do not digitally remove it.
+
+  Slide 2    PM01 portrait photo   Reveal the full stairway and sign. “Zandvoort. On the Kippentrap.” Small label: “Mel’s”. This answers the question without implying we show the interior.
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Caption to copy
+
+A little blue and white on the Kippentrap.
+This is Mel’s in Zandvoort. Keep an eye out for the tiled stairway when you are making evening plans.
+Find this local spot through LookyBooky. Did you recognise it?
+#Zandvoort #LookyBooky
+
+Why this post: Friday publication offers an evening discovery. Check that Mel’s is open on the promoted weekend.
+
+Test: Does a recognisable local detail prompt genuine guesses and saves? Relevant comments and saves per reach.
+
+Check: Visit Zandvoort lists Thursday–Sunday evenings. Official bar site did not load; Abdul checks the venue and live LookyBooky listing before scheduling. Do not add an offer amount.
+
+Alternative: If the venue is unavailable, keep the two images as a local-detail post: “Zandvoort, up close.” Remove the restaurant invitation and caption: “A little blue and white on the Kippentrap. What detail do you always stop to photograph? #Zandvoort #LookyBooky”
+
+LB2026_KimKramer_M02.jpg | Locations/Mel's
+
+LB2026_KimKramer_M01.jpg | Locations/Mel's
+
+Shared source folder · Abdul to edit, preview and confirm checks.
+
+04 Coastal hair
+
+Monday 09 November · 18:30 · Instagram Reel 9 seconds
+
+Consumer value: A recognisable coastal joke with a practical warm-up spot.
+
+[] [] []
+
+Previews in edit order: H02 · H08 · H20. Use the linked originals.
+
+  -------------------------------------------------------------------------------------------------
+  Position   Source and trim   Picture and exact on screen copy
+  ---------- ----------------- --------------------------------------------------------------------
+  0–3s       H02 0.5–3.5s      Wind moving the visitor’s hair. “POV: the coast / did your hair.”
+
+  3–6s       H08 0.5–3.5s      Walk into De Haven. Text: “Time to head inside.”
+
+  6–9s       H20 0.5–3.5s      Flame close-up. Label: “De Haven van Zandvoort”. No extra message.
+  -------------------------------------------------------------------------------------------------
+
+Caption to copy
+
+Coastal hair. A very good reason to head inside.
+De Haven van Zandvoort is one of our local stops for a pause by the beach. Find it on LookyBooky.
+Send this to the friend whose hair never survives a beach walk.
+#Zandvoort #LookyBooky
+
+Audio: Lightly playful instrumental with a soft accent at 3 seconds. Fallback: natural sound fading into clean fire ambience if present. No wind blast.
+
+Why this post: A Monday coastal joke builds on the gull post’s sharing signal, with a different scene. The footage supplies the joke; we are not predicting the weather.
+
+Test: Does recognisable humour increase sends? Shares per reach and retention to the fireplace reveal.
+
+Check: Venue confirms year-round opening. Do not promise the fire will always be lit or describe archive weather as the forecast.
+
+Alternative: If the entrance sequence feels slow, use two seconds H02, two seconds H08 and three seconds H20, keeping the same text order.
+
+LB2026_H02.MOV | Locaties/De Haven van Zandvoort
+
+LB2026_H08.MOV | Locaties/De Haven van Zandvoort
+
+LB2026_H20.MOV | Locaties/De Haven van Zandvoort
+
+Shared source folder · Abdul to edit, preview and confirm checks.
+
+05 The women who walked to Haarlem
+
+Wednesday 11 November · 12:00 · Instagram Carousel 3 slides
+
+Consumer value: Teaches one surprising, documented piece of local history and gives a concrete reason to visit the museum.
+
+[] []
+
+Previews in edit order: PZM18 · PZM01. Use the linked originals.
+
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Position   Source and trim                Picture and exact on screen copy
+  ---------- ------------------------------ ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Slide 1    PZM18 portrait photo           Museum visitor and history panel as context. Headline: “To Haarlem. On foot. / Carrying fish.” Do not imply the photographed panel tells this specific story.
+
+  Slide 2    Existing brand text template   “Zandvoort’s fish sellers carried heavy baskets from the beach to Haarlem to sell the catch.” Then, smaller: “Their work helped support their families.” Use Ocean on Mist; no unrelated artwork.
+
+  Slide 3    PZM01 portrait photo           Museum entrance. “Meet the women behind the story.” Label: “Zandvoortse Vrouwen · Zandvoorts Museum”. Small line: “Until 4 April 2027”.
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Caption to copy
+
+To Haarlem. On foot. Carrying fish.
+Zandvoort’s visloopsters bought fish on the beach and carried heavy baskets to Haarlem to sell it. Their work helped support their families.
+Discover their stories in Zandvoortse Vrouwen at Zandvoorts Museum, on view until 4 April 2027. Find the museum through LookyBooky and check the current visitor information before you go.
+#Zandvoort #ZandvoortsMuseum #LookyBooky
+
+Why this post: A real piece of local history replaces a generic museum recommendation. The exhibition is scheduled during this publication week.
+
+Test: Does one surprising fact create more saves and exhibition-link taps than a general venue introduction? Track saves per reach and Story link taps.
+
+Check: The museum’s official exhibition page, checked 26 October, supports the fish sellers’ story and exhibition dates. Archive museum photographs are context only; do not identify an unverified painting or person. Recheck the exhibition before publishing.
+
+Alternative: If the history-panel photograph feels misleading, use a brand text card for slide 1 with the same hook. Retain the factual second card and the entrance on slide 3. No additional image required.
+
+LB2026_KimKramer_ZM18.jpg | Use of LookyBooky
+
+LB2026_KimKramer_ZM01.jpg | Use of LookyBooky
+
+Shared source folder · Abdul to edit, preview and confirm checks.
+
+06 Watch the finishing touches
+
+Friday 13 November · 18:30 · Instagram Reel 6 seconds
+
+Consumer value: Lets the viewer see a real person finish dishes, with a clear visual result.
+
+[] []
+
+Previews in edit order: F23 · F24. Use the linked originals.
+
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Position   Source and trim   Picture and exact on screen copy
+  ---------- ----------------- ----------------------------------------------------------------------------------------------------------------------------------------
+  0–4s       F23 0.5–4.5s      Open on the chef and the plates. Text: “A few seconds / before service.” Keep the hands and food visible.
+
+  4–6s       F24 0.15–2.15s    Finish on the plated dishes at the pass. Small label: “Filoxenia · Zandvoort”. This is the result; do not add an unrelated table shot.
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Caption to copy
+
+The finishing touches before dinner reaches the table.
+A little look into the kitchen at Filoxenia, one of the local places you can discover with LookyBooky.
+Would you like to see more of what happens in the kitchen?
+#Zandvoort #Filoxenia #LookyBooky
+
+Audio: Light rhythmic instrumental with the cut at 4 seconds on a musical accent. Prefer usable kitchen sound if clean; no added or simulated cooking sounds.
+
+Why this post: A complete small action works better here than extending the edit with unrelated food. The shorter length follows the available sequence.
+
+Test: Does action followed by a clear result improve watch time and replies? Average watch time / 6 seconds and relevant comments. Do not compare raw completion percentages with longer Reels alone.
+
+Check: Check the plate arrangement across the cut. The previews show similar plates, but do not claim an uninterrupted preparation or name an unverified dish. Dinner service and current listing require the usual check.
+
+Alternative: Use F23 alone for the six-second sequence only after watching the full trim and confirming the finishing action is visible. Otherwise retain the sampled four-second action and two-second result as shown.
+
+LB2026_F23.MOV | Locaties/Filoxenia/Keuken : Bar Filoxenia
+
+LB2026_F24.MOV | Locaties/Filoxenia/Keuken : Bar Filoxenia
+
+Shared source folder · Abdul to edit, preview and confirm checks.
+
+07 Look up
+
+Monday 16 November · 18:30 · Instagram Reel 8 seconds
+
+Consumer value: A surprising coastal detail and a moment of wonder.
+
+[] []
+
+Previews in edit order: SA02 · SA03. Use the linked originals.
+
+  ----------------------------------------------------------------------------------------------------------------------------
+  Position   Source and trim   Picture and exact on screen copy
+  ---------- ----------------- -----------------------------------------------------------------------------------------------
+  0–4s       SA02 0.5–4.5s     Green kite moving over waves. “Your reminder / to look up.”
+
+  4–8s       SA03 0.5–4.5s     Second kite and open sky. Label: “Zandvoort”. Keep the kite unobstructed; no zoom transition.
+  ----------------------------------------------------------------------------------------------------------------------------
+
+Caption to copy
+
+There’s usually something happening above the horizon, too.
+A small moment from Zandvoort. Keep looking.
+#Zandvoort #LookyBooky
+
+Audio: Airy instrumental with a light pulse, 90–105 BPM. Fallback: usable sea ambience; remove wind distortion. No fake kite sound effects.
+
+Why this post: A Monday attention reset; an evergreen creative test, not a verified viral quote.
+
+Test: Does visible motion outperform a static coastal opener? Average watch time relative to 8 seconds; shares per reach. Compare directionally, not as a controlled experiment.
+
+Check: This is archive footage, not a forecast or a kite lesson offer. No claim about safe wind conditions.
+
+Alternative: Use SA02 alone for eight seconds if the second kite is too small in the phone preview.
+
+LB2026_SA02.MOV | Strand/Algemeen
+
+LB2026_SA03.MOV | Strand/Algemeen
+
+Shared source folder · Abdul to edit, preview and confirm checks.
+
+08 Even the walls have a sea view
+
+Wednesday 18 November · 18:30 · Instagram Reel 10 seconds
+
+Consumer value: Reveals a small seaside detail in the village and gives viewers a reason to keep exploring beyond the beach.
+
+[] [] []
+
+Previews in edit order: IMG5636 · IMG5596 · IMG5395. Use the linked originals.
+
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Position   Source and trim    Picture and exact on screen copy
+  ---------- ------------------ ----------------------------------------------------------------------------------------------------------------------------------------------
+  0–3s       IMG5636 0.5–3.5s   Open on the real sea beyond the grass. Text: “Come for the beach.”
+
+  3–6s       IMG5596 0.5–3.5s   Cut to the village street. Text: “Keep looking in the village.”
+
+  6–10s      IMG5395 0–4s       Reveal the large sea photograph on the brick wall. Text: “Even the walls / have a sea view.” Keep the wall image visible below the headline.
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Caption to copy
+
+Come for the beach. Keep looking in the village.
+Even the walls have a sea view. A small Zandvoort detail worth noticing on your next wander.
+Discover local favourites along the way with LookyBooky.
+Had you spotted this?
+#Zandvoort #LookyBooky
+
+Audio: Light, playful instrumental with a small accent on the wall reveal at 6 seconds. Select and log a business-account-cleared track before posting; no claim that a particular song is trending. Alternative: licensed light instrumental, without added footsteps or invented location sound.
+
+Why this post: A midweek invitation to notice something unexpected in the village. The final image answers the opening; this is an evergreen discovery, not a weather forecast or event announcement.
+
+Test: Does a real visual surprise keep people watching to the reveal? Track average watch time / 10 seconds, shares per reach and comments recognising the detail.
+
+Check: Three portrait originals sampled at 0.5, 2 and 4 seconds. Review the full-speed cuts and audio. This shows a photograph on a wall, not a painted mural or a mapped continuous route. Local files are verified; confirm the Zandvoort subfolder is accessible in the shared Dropbox folder, or upload these three originals and paste their file links into the edit handover.
+
+Alternative: If the street transition feels slow, use 0–2s beach, 2–4s street and 4–8s wall. Keep the same three messages, in sync with their images. Do not replace the wall with an unrelated sea shot.
+
+IMG_5636.MOV | Zandvoort
+
+IMG_5596.MOV | Zandvoort
+
+IMG_5395.MOV | Zandvoort
+
+Shared source folder · Abdul to edit, preview and confirm checks.
+
+09 Two pours and a colour change
+
+Friday 20 November · 12:00 · Instagram Reel 8 seconds
+
+Consumer value: Gives viewers a satisfying small transformation and reveals the local place behind it.
+
+[] []
+
+Previews in edit order: SP09 · SP10. Use the linked originals.
+
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Position   Source and trim   Picture and exact on screen copy
+  ---------- ----------------- ------------------------------------------------------------------------------------------------------------------------------------------------
+  0–4s       SP09 0.5–4.5s     Start with the pour into the cup. Text: “Watch the colour change.” Keep the stream and cup clear.
+
+  4–8s       SP10 0.5–4.5s     Show the next pour and the changed drink. Let the cup provide the payoff; small label: “Sweet Pearl · Zandvoort”. No pretend tasting reaction.
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Caption to copy
+
+Two pours. A little colour in your day.
+A behind-the-counter moment at Sweet Pearl on Kerkstraat. Discover this local stop with LookyBooky.
+#Zandvoort #SweetPearl #LookyBooky
+
+Audio: Light lo-fi instrumental, 85–100 BPM; retain clean pouring sound if audible. Fallback: no music, usable preparation audio. Do not add invented ASMR.
+
+Why this post: Friday treat before a family weekend; different assets and product from October’s stroopwafel Reel.
+
+Test: Does a visible transformation hold attention through the reveal? Average watch time / 8 seconds and shares per reach.
+
+Check: Verify which drink the footage shows and its current availability before naming it. Current venue information lists Wednesday closed; this is a Friday post. No included-drink or discount claim.
+
+Alternative: If the full-speed cut does not show a clear colour change, change the opening to “A little look behind the counter.” Keep the same sequence and do not fake a transformation.
+
+LB2026_SP09.MOV | Locaties/Sweet Pearl
+
+LB2026_SP10.MOV | Locaties/Sweet Pearl
+
+Shared source folder · Abdul to edit, preview and confirm checks.
+
+10 A moment without a to do list
+
+Monday 23 November · 18:30 · Instagram Reel 8 seconds
+
+Consumer value: A quiet visual break during the build-up to holiday shopping.
+
+[] []
+
+Previews in edit order: SA30 · SA20. Use the linked originals.
+
+  -----------------------------------------------------------------------------------------------------------------------------------
+  Position   Source and trim   Picture and exact on screen copy
+  ---------- ----------------- ------------------------------------------------------------------------------------------------------
+  0–4s       SA30 0.5–4.5s     Footprints leading towards the beach. “Nothing to tick / off here.”
+
+  4–8s       SA20 0.5–4.5s     Dune grass in motion with the sea beyond. Remove headline after one second. Small “Zandvoort” label.
+  -----------------------------------------------------------------------------------------------------------------------------------
+
+Caption to copy
+
+No itinerary for the next few minutes.
+Just a little room to look around. Zandvoort, through LookyBooky’s eyes.
+Save a moment like this for yourself.
+#Zandvoort #LookyBooky
+
+Audio: Sparse ambient instrumental, no strong beat or vocals. Preferred alternative: clean original coastal audio. Do not reuse the kite Reel’s track.
+
+Why this post: A Monday pause before a busy end-of-year period. Tests a calm single thought against the more active coastal and kitchen edits.
+
+Test: Does a calmer pace encourage repeat viewing? Average watch time / 8 seconds and shares per reach.
+
+Check: Archive coastal scenes; do not caption them as current November weather. Check the export does not crop out footprints.
+
+Alternative: If the dune transition weakens the mood, use SA30 alone for 7 seconds; end without a sales card.
+
+LB2026_SA30.MOV | Strand/Algemeen
+
+LB2026_SA20.MOV | Strand/Algemeen
+
+Shared source folder · Abdul to edit, preview and confirm checks.
+
+11 What happens after collection
+
+Wednesday 25 November · 18:30 · Instagram Carousel 3 slides
+
+Consumer value: Explains an often invisible part of waste work without a numerical impact claim.
+
+[] [] []
+
+Previews in edit order: CHT · CHS · CHA. Use the linked originals.
+
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Position   Source and trim      Picture and exact on screen copy
+  ---------- -------------------- ---------------------------------------------------------------------------------------------------------------------------------------
+  Slide 1    CHT portrait photo   Collection vehicle. “Picking it up / is only the start.” Credit: “Photo: CleanHub”.
+
+  Slide 2    CHS portrait photo   Workers and sorting line. “It needs sorting.” Credit: “Photo: CleanHub”.
+
+  Slide 3    CHA portrait photo   Phone recording collection. “And tracking.” Small closing: “We support waste collection through CleanHub.” Credit: “Photo: CleanHub”.
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Caption to copy
+
+Picking it up is only the start.
+Collection, sorting and tracking are all part of the work CleanHub supports. LookyBooky supports waste collection through this partnership, helping prevent waste from reaching the ocean.
+These images show CleanHub’s work beyond Zandvoort.
+Photos: CleanHub.
+#LookyBooky #CleanHub
+
+Why this post: A process explanation follows October’s successful impact introduction with new photographs and a different question.
+
+Test: Does explaining the process prompt meaningful questions? Saves and substantive comments; do not treat generic likes as proof of trust.
+
+Check: Use original supplied photos, not campaign graphics. No worker names, country claims or quantities. These illustrate stages across CleanHub’s work, not one verified shipment. Confirm partnership remains active before publishing.
+
+Alternative: If a 4:5 crop hides the task, inset the full portrait image in the existing Mist template; use the same treatment for all three slides.
+
+Transport of collected waste.jpg | Social Media/Selectie beelden CleanHub
+
+The team sorting waste.jpg | Social Media/Selectie beelden CleanHub
+
+Imagery for the CleanHub track and trace app.jpg | Social Media/Selectie beelden CleanHub
+
+Shared source folder · Abdul to edit, preview and confirm checks.
+
+12 The seat by the window
+
+Friday 27 November · 12:00 · Instagram Reel 8 seconds
+
+Consumer value: Introduces an indoor lunch option with a coastal view.
+
+[] []
+
+Previews in edit order: T12 · T29. Use the linked originals.
+
+  ----------------------------------------------------------------------------------------------------------------------------------------
+  Position   Source and trim   Picture and exact on screen copy
+  ---------- ----------------- -----------------------------------------------------------------------------------------------------------
+  0–4s       T12 0.5–4.5s      Start with the actual window and table view. “POV: you got / the window seat.”
+
+  4–8s       T29 0.5–4.5s      Cut to lunch at the window. Small “Thalassa · Zandvoort” label. Keep the meal visible; no wine reference.
+  ----------------------------------------------------------------------------------------------------------------------------------------
+
+Caption to copy
+
+The view is part of lunch.
+A table at Thalassa, right on Zandvoort beach and open through the seasons. One of the local spots to discover with LookyBooky.
+Who gets the window seat?
+#Zandvoort #Thalassa #LookyBooky
+
+Audio: Warm instrumental soul, 80–95 BPM, with the cut at four seconds on a musical phrase. Fallback: quiet usable room sound without intelligible private conversation.
+
+Why this post: Indoor coastal lunch is useful in November; the main restaurant confirms year-round opening.
+
+Test: Does a specific seat hook invite replies? Relevant comments and shares per reach; average watch time.
+
+Check: Use the year-round main restaurant, not the seasonal Bodega. Confirm current menu/listing; no price, reserved-seat promise or weather claim.
+
+Alternative: Use T12 alone for seven seconds if the lunch cut weakens the seat-view idea. No promise that a particular table can be reserved.
+
+LB2026_T12.MOV | Locaties/Thalassa
+
+LB2026_T29.MOV | Locaties/Thalassa
+
+Shared source folder · Abdul to edit, preview and confirm checks.
+
+Stories that support the feed
+
+Two or three Story days each week. All sources below are portrait; export 9:16 and add native stickers in Instagram. Reusing that week’s feed footage in a supporting Story is intentional. Source links are in the corresponding brief. The ZV22 coast clip used for the event Story is linked below; it is illustrative, not footage of the arrival. Do not automatically share every feed post without adding a reason to tap or reply.
+
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Date and time    Vertical source                  Copy and action
+  ---------------- -------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  2 Nov 19:00      SA13                             “Your next break?” Poll: “By the sea” / “In the village”.
+
+  4 Nov 19:00      JGS03                            “Would you join a beachcombing morning?” Poll: “Yes” / “Tell me more”. Link to the current activity listing if verified.
+
+  7 Nov 12:00      PM02                             “Have you spotted this doorway?” Use location sticker and current Mel’s listing link.
+
+  9 Nov 19:00      H02                              “Does your hair do this too?” Emoji slider. No weather claim.
+
+  11 Nov 19:00     PZM01 + ZV22                     Frame 1: “They carried fish to Haarlem. On foot.” Link to the exhibition. Frame 2: “Sinterklaas arrives this Sunday · 15 November.” Link to the organiser programme, after checking.
+
+  15 Nov morning   Existing template                Only after same-day check: “Going today? Here are the latest details.” Organiser link; remove if cancelled.
+
+  16 Nov 19:00     SA02                             “What do you notice first?” Poll: “Sky” / “Sea”.
+
+  18 Nov 19:00     IMG5395                          “Had you spotted this?” Poll: “Yes!” / “New to me”. Use the sea photograph on the wall, with a Zandvoort location sticker.
+
+  20 Nov 12:30     SP10                             Reshare the drink Reel. “A colourful little stop.” Use the current Sweet Pearl listing link only after checking availability.
+
+  24 Nov 12:00     Existing published how-to Reel   Reshare “New to LookyBooky?” Add “How the pass works”. Save to a How it works Highlight if appropriate. No new explainer production.
+
+  25 Nov 19:00     CHS                              “The work continues after collection.” Credit CleanHub and link to CleanHub. Keep global work separate from local activities.
+
+  27 Nov 12:30     T12                              “Window seat or somewhere cosy inside?” Poll. Link to the current Thalassa listing if verified.
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ZV22 Story original | Strand/Zandvoort/LB2026_ZV22.MOVShared video folder
+
+Measure poll responses against Story reach, and link taps against Story reach. Story views in the supplied screenshots are much lower than feed views; do not treat those as comparable formats.
+
+Checks before each weekly batch
+
+Approve the first three edits, not a month of finished exports at once. Match every overlay to the visible action. Check crops and audio on a phone. Keep captions short. Save the editable project, selected audio URL and final used trims so the next plan can avoid repeated openings.
+
+Practical gaps and alternatives
+
+Audio has not been auditioned from the source files or selected in Instagram: use each brief’s sound direction, mute unusable source audio and choose a licensed instrumental if needed. No new shoot is necessary for the selected feed ideas. Some original MOV files could not be decoded in this revision run. Their existing sampled previews support the selections, but Abdul must watch the linked originals at full speed before finalising the proposed trims. Offer values are intentionally omitted because current deal conditions need verification. If a venue is closed, use the brief’s alternative or move the evergreen coastal item into its slot.
+
+Abdul’s final queue may differ from earlier documents. Check the live posts and scheduled drafts before editing. These selected feed assets do not repeat the October calendar’s chosen opening files, but the published Juttersgeluk edit needs a shot-level check. The 4 November brief has a specific replacement if its action has already been used.
+
+Keep 23 November as a flexible slot. On 19 November, replace it only if a more useful confirmed local story has usable real imagery. Otherwise publish the prepared coastal Reel. The plan does not provide ongoing monitoring.
+
+Measure after 48 hours and seven days
+
+Record views, reach, saves, sends/shares, meaningful comments, profile visits and average watch time. Note collaborations, boosts and publication age. For Reels, compare watch time relative to duration; for carousels, compare saves and shares per 100 reached. Keep raw counts next to rates. Do not call a post a winner from a tiny sample or views alone.
+
+Week 1: test whether a clear invitation and a visible action repeat October’s strongest themes. Week 2: test humour and preparation against static restaurant atmosphere. Week 3: test wonder, a village discovery and a visible drink transformation. The family event tip stays in week two Stories on its actual dates. Week 4: test a calm pause, a deeper impact explanation and a specific restaurant moment. Change one main creative choice at a time where possible; these remain directional comparisons.
+
+Source checks for practical claims
+
+Official event page checked 26 October confirms Sinterklaas on 15 November, followed by the Sintfestival. Recheck before publishing. Venue sources below were reviewed for the previous plan on 25 October; confirm opening and live LookyBooky listings before each post. Do not promote the ended Lammersen exhibition. Do not use percentage or kilo impact claims.
+
+Sinterklaas programme
+
+Museum story and exhibition
+
+Sweet Pearl opening
+
+Thalassa
+
+De Haven
+
+Filoxenia
+
+Mel’s listing and opening to reconfirm
+
+Juttersgeluk
+
+CleanHub
+
+LookyBooky current listings
