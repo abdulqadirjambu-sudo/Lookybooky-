@@ -1,4 +1,4 @@
-"""Builds output/Next_30_Days_Calendar.csv (24 Nov - 23 Dec 2026, Europe/Amsterdam, CET)."""
+"""Builds output/Next_30_Days_Calendar.csv: the December 2026 plan (1-31 Dec, Europe/Amsterdam, CET)."""
 import csv, datetime as dt
 F = ["date","day","time_CET","format","funnel_stage","pillar","working_title","hook_onscreen_NL","visual_direction",
      "caption_NL","caption_EN_line","CTA","hashtags","collab_or_partner","story_support","primary_KPI","test_id","checks_before_posting"]
@@ -143,8 +143,41 @@ rows = [
  "Tag every partner shown; ask them to reshare","","Comments; partner reshares","T3 (Trial Reel: 8s vs 15s)",
  "Use only footage you have the rights to. Don't give partner counts unless verified."),
 ]
-assert len(rows) == 30, len(rows)
-start = dt.date(2026, 11, 24)
+# --- December plan: start 1 Dec; move the Nov-30 beachcombing Reel to 28 Dec; add 24-31 Dec ---
+_jut = [r for r in rows if r[0] == "2026-11-30"][0]
+rows = [r for r in rows if r[0] >= "2026-12-02"]
+_j = list(_jut); _j[0] = "2026-12-28"; _j[13] = "Tue 29 Dec Story reshare"; _j[15] = "T1 (Trial Reel: EN overlays + EN caption)"
+rows.append(tuple(_j))
+rows += [
+("2026-12-01","12:00 + 19:00","Stories (4 frames)","Conversion",P5,"Zo werkt de pass + jouw strandvondst","Nieuw hier? Zo werkt het.",
+ "12:00 F1 reshare how-it-works Reel (16 Oct). F2 quiz sticker. F3 link sticker (UTM). Save to Highlight 'Zo werkt het'. 19:00 F4 question sticker 'Wat vond jij ooit op het strand? Stuur je vondst' (answers are used on 16 Dec).",
+ "","","Quiz: 'Hoe lang is de pass geldig? 1 maand / 6 maanden / 1 jaar'. Link: 'Pass bekijken'. Question sticker.","","","","Link taps / story reach; quiz answers; question replies","",
+ "The profile fix must be live first: name 'LookyBooky Zandvoort', Dutch-first bio, UTM link, Highlights. Ask permission before reposting any answer."),
+("2026-12-24","12:00","Stories (2 frames)","Retention",P4,"Kerstavond","Fijne kerstdagen vanaf de kust.",
+ "Calm sea clip, Turquoise and Mist, no sales frame. F2 poll. No carousel this week.",
+ "","","Poll: 'Kerstwandeling: strand / bos'","","","","Poll response rate","","No sales, no deal mentions."),
+("2026-12-25","—","Rest (no post)","Retention","—","Eerste kerstdag","",
+ "No feed post. Reply to DMs and comments only. The Friday Reel moves to Mon 28 Dec.","","","","","","","Reply time under 24h","",""),
+("2026-12-26","10:00","Stories (2 frames)","Conversion",P1,"Tweede kerstdag: uitwaaien","Tweede kerstdag? Uitwaaien aan zee.",
+ "F1 wind-and-beach clip. F2 link to Highlight 'Open in de winter', showing only addresses confirmed open on 26 Dec.",
+ "","","Link: 'Wat is er vandaag open?'","","","","Link taps / story reach","","Check which partners are open on 26 Dec before posting."),
+("2026-12-27","—","Community (no post)","Retention","—","Reply and engage","","Same routine as other Sundays.","","","","","","","Reply time under 24h","",""),
+("2026-12-29","12:00","Stories (3 frames)","Retention",P4,"Oliebol-poll","Oliebol: met of zonder rozijnen?",
+ "F1 poll. F2 reshare Monday's Reel. F3 Nieuwjaarsduik reminder with organiser link.",
+ "","","Poll: 'Met rozijnen / Zonder'","","","","Poll taps","","Don't name an oliebollen seller unless it's a partner or verified. Dive details only once confirmed."),
+("2026-12-30","18:00","Reel 8-15s","Discovery → conversion",P4,"Goed voornemen: vaker uitwaaien","Goed voornemen voor 2027:",
+ "Frame 1: someone walking into the wind, coat flapping; overlay completes at 2s: 'vaker uitwaaien.' Cut to a warm drink at a partner. 1s end card with the pass.",
+ "Goed voornemen voor 2027: vaker uitwaaien.\nEen uur aan zee, daarna iets warms bij een lokaal adres. Met de LookyBooky Pass heb je er een jaar lang voordeel bij.\nStuur dit naar wie je eraan gaat houden.",
+ "EN: New year's resolution: more walks in the wind. The pass is valid all year.","Send (DM)","#goedevoornemens #uitwaaien #Zandvoort #LookyBooky",
+ "Tag the partner shown","","Sends per reach; link taps","T3 (Trial Reel: 8s vs 15s)",
+ "Archive footage: no claim about the weather. Check the partner's offer in the app."),
+("2026-12-31","12:00","Stories (2 frames)","Retention",P1,"Oudejaarsdag","Morgen de zee in?",
+ "F1 Nieuwjaarsduik details + organiser link. F2 'Fijne jaarwisseling' with a calm sea clip. No carousel this week.",
+ "","","Link: organiser page","","","Organiser link","Link taps","","Only with confirmed 1 Jan dive details (organiser, time, place)."),
+]
+rows.sort(key=lambda r: r[0])
+assert len(rows) == 31, len(rows)
+start = dt.date(2026, 12, 1)
 with open("output/Next_30_Days_Calendar.csv", "w", newline="", encoding="utf-8") as f:
     w = csv.writer(f); w.writerow(F)
     for i, r in enumerate(rows):

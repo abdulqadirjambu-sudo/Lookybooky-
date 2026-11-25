@@ -179,9 +179,9 @@ footer {{ padding-block:40px; font-size:14px; color:var(--ink-muted); border-top
 </style>
 
 <header class="hero"><div class="wrap">
-  <div class="eyebrow">@lookybooky.nl · Instagram plan · 24 Nov 2026 – 21 Feb 2027</div>
+  <div class="eyebrow">@lookybooky.nl · Instagram plan · 1 Dec 2026 – 28 Feb 2027</div>
   <h1>Zandvoort sees us.<br><em>Now make them stay.</em></h1>
-  <p class="lead">What 24 posts taught us, the Dutch-first plan that follows from it, and the next 30 days, post by post. Built from Meta insights (via vidIQ), the September and November plans, brand guide v3.25 and the Zandvoort profile.</p>
+  <p class="lead">What 24 posts taught us, the Dutch-first plan that follows from it, and December, post by post. Built from Meta insights (via vidIQ), the September and November plans, brand guide v3.25 and the Zandvoort profile.</p>
   <div class="meta"><span><b>32</b> followers</span><span><b>4,848</b> accounts reached in 90 days</span><span><b>24</b> posts since 31 Aug</span><span>Prepared 23 Nov 2026</span></div>
   <div class="diag">
     <div><div class="n">99.3%</div><div class="l">of reach is non-followers. Instagram already shows us to strangers.</div></div>
@@ -301,8 +301,8 @@ footer {{ padding-block:40px; font-size:14px; color:var(--ink-muted); border-top
 </div></section>
 
 <section id="calendar"><div class="wrap">
-  <div class="head"><div class="eyebrow">Next 30 days · 24 Nov – 23 Dec · times in CET</div><h2>The calendar, post by post</h2>
-  <p class="lead">17 feed posts (13 Reels, 4 carousels), Stories on 9 days and a community block on 4. Open any day for the hook, visual, Dutch caption, English line, CTA, test and what to check before posting.</p></div>
+  <div class="head"><div class="eyebrow">December 2026 · 1–31 Dec · times in CET</div><h2>The calendar, post by post</h2>
+  <p class="lead">16 feed posts (13 Reels including the giveaway, 3 carousels), Stories on 10 days, community or rest on 5. Already scheduled from the November plan: CleanHub carousel (25 Nov) and Thalassa Reel (27 Nov, post as Collab). Open any day for the hook, visual, Dutch caption, English line, CTA, test and what to check before posting.</p></div>
   <div class="filters" role="group" aria-label="Filter by format">
     <button type="button" id="f-all" data-f="all" aria-pressed="true">All</button>
     <button type="button" id="f-reel" data-f="reel" aria-pressed="false">Reels</button>
@@ -317,7 +317,7 @@ footer {{ padding-block:40px; font-size:14px; color:var(--ink-muted); border-top
   <div class="head"><div class="eyebrow">KPIs</div><h2>Targets from our own baseline</h2>
   <p class="lead">One North Star and four supporting numbers. Reel figures are read at 7 days so old and new posts compare fairly.</p></div>
   <div class="tbl"><table>
-    <tr><th>KPI</th><th>Baseline</th><th>30 days<br>23 Dec</th><th>60 days<br>22 Jan</th><th>90 days<br>21 Feb</th></tr>
+    <tr><th>KPI</th><th>Baseline</th><th>31 Dec</th><th>31 Jan</th><th>28 Feb</th></tr>
     <tr><td><b>North Star:</b> median non-follower reach per Reel</td><td class="num">182 (Nov 118)</td><td class="num">250</td><td class="num">350</td><td class="num">500</td></tr>
     <tr><td>Median Reel skip rate</td><td class="num">65%</td><td class="num">58%</td><td class="num">52%</td><td class="num">≤48%</td></tr>
     <tr><td>Sends per reach, Reels</td><td class="num">1.15% (Nov 0.24%)</td><td class="num">1.0%</td><td class="num">1.5%</td><td class="num">2.0%</td></tr>
@@ -337,24 +337,24 @@ footer {{ padding-block:40px; font-size:14px; color:var(--ink-muted); border-top
   <p class="lead">With 100–2,000 reach per post, classic A/B significance isn't possible. Each test uses a Trial Reel (the same footage as a second version, shown only to non-followers) or alternating posts, with a decision rule set in advance.</p></div>
   <div class="tbl"><table>
     <tr><th>Test</th><th>Question</th><th>Design</th><th>We decide when</th></tr>
-    <tr><td><b>T1</b> Language</td><td>Do Dutch overlays and captions hold people longer?</td><td>NL main post vs EN Trial Reel · 30 Nov, 7 Dec, 18 Dec</td><td>NL wins skip rate in 2 of 3 without losing sends</td></tr>
+    <tr><td><b>T1</b> Language</td><td>Do Dutch overlays and captions hold people longer?</td><td>NL main post vs EN Trial Reel · 7, 18, 28 Dec</td><td>NL wins skip rate in 2 of 3 without losing sends</td></tr>
     <tr><td><b>T2</b> Hook</td><td>Does action in frame 1 beat a scenic opening?</td><td>Action-first vs scenic-first Trial Reel · 4 Dec, 14 Dec, +1 in Jan</td><td>2 of 3 wins with a gap of 5+ points in skip rate</td></tr>
-    <tr><td><b>T3</b> Length</td><td>Do 13–16s cuts reach further than 7–9s?</td><td>Same footage, two lengths · 11 Dec, 23 Dec, +1 in Jan</td><td>The winner of 2 of 3 sets the default length</td></tr>
-    <tr><td><b>T4</b> Collab</td><td>Does a partner as co-author beat a tag?</td><td>Collab (27 Nov, 11 Dec) vs tag only (2 Dec, 16 Dec)</td><td>Collab averages 1.3× the reach: make it the default</td></tr>
+    <tr><td><b>T3</b> Length</td><td>Do 13–16s cuts reach further than 7–9s?</td><td>Same footage, two lengths · 11, 23, 30 Dec</td><td>The winner of 2 of 3 sets the default length</td></tr>
+    <tr><td><b>T4</b> Collab</td><td>Does a partner as co-author beat a tag?</td><td>Collab (27 Nov, 11 Dec) vs tag only (2, 16 Dec)</td><td>Collab averages 1.3× the reach: make it the default</td></tr>
     <tr><td><b>T5</b> Time</td><td>Can 10:00 match 18:00?</td><td>10:00 Reels on 9 and 21 Dec vs that week's 18:00 median</td><td>Keep 18:00 unless both 10:00 posts win</td></tr>
   </table></div>
 </div></section>
 
 <section class="alt"><div class="wrap">
-  <div class="head"><div class="eyebrow">First week</div><h2>Who does what</h2></div>
+  <div class="head"><div class="eyebrow">Before and during December</div><h2>Who does what</h2></div>
   <div class="tbl"><table>
     <tr><th>When</th><th>Task</th><th>Owner</th></tr>
-    <tr><td class="num">Tue 24 Nov</td><td>Profile rename, Dutch-first bio, UTM link, Highlights, pinned posts. Metricool timezone to Europe/Amsterdam. Start the DM-send log.</td><td>Social lead</td></tr>
-    <tr><td class="num">Wed 25 Nov</td><td>Gift steps for the 3 Dec carousel and the Cadeau Highlight. Draft the giveaway actievoorwaarden; pick the co-host partner.</td><td>Product / Isabel</td></tr>
-    <tr><td class="num">Wed 25 Nov</td><td>Partner emails: Collab acceptance and filming slots (gull, beach walk, De Haven fireplace).</td><td>Partnerships</td></tr>
+    <tr><td class="num">By 30 Nov</td><td>Profile rename, Dutch-first bio, UTM link, Highlights, pinned posts. Metricool timezone to Europe/Amsterdam. Start the DM-send log.</td><td>Social lead</td></tr>
+    <tr><td class="num">By 1 Dec</td><td>Gift steps for the 3 Dec carousel and the Cadeau Highlight. Draft the giveaway actievoorwaarden; pick the co-host partner.</td><td>Product / Isabel</td></tr>
+    <tr><td class="num">By 1 Dec</td><td>Partner emails: Collab acceptance and filming slots (gull, beach walk, De Haven fireplace).</td><td>Partnerships</td></tr>
     <tr><td class="num">Every Fri</td><td>Cut and approve next week's 4 feed posts.</td><td>Abdul + reviewer</td></tr>
     <tr><td class="num">Daily</td><td>15-minute community block; log post numbers at 48h and 7 days.</td><td>Social lead</td></tr>
-    <tr><td class="num">23 Dec</td><td>30-day review: decide on tests T1, T4 and T5.</td><td>Social lead</td></tr>
+    <tr><td class="num">31 Dec</td><td>Month review: decide on tests T1, T4 and T5.</td><td>Social lead</td></tr>
   </table></div>
 </div></section>
 
